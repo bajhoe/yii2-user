@@ -32,3 +32,6 @@ tests/_output/*
 
 # composer lock file
 composer.lock
+
+*.code-workspace
+.vscode/*

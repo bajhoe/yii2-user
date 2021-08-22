@@ -1,5 +1,5 @@
 {
-    "name": "dektrium/yii2-user",
+    "name": "bajhoe/yii2-user",
     "description": "Flexible user registration and authentication module for Yii2",
     "keywords": ["yii2", "yii2-user", "user management", "dektrium"],
     "type": "yii2-extension",
@@ -22,7 +22,7 @@
         "yiisoft/yii2": "^2.0.13",
         "yiisoft/yii2-swiftmailer": "^2.0.0",
         "yiisoft/yii2-authclient": "^2.1.0",
-        "yiisoft/yii2-bootstrap": "^2.0.0"
+        "yiisoft/yii2-bootstrap5": "@dev"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "^2.0.0",
@@ -31,7 +31,7 @@
     },
     "autoload": {
         "psr-4": {
-            "dektrium\\user\\": ""
+            "bajhoe\\user\\": ""
         }
     },
     "extra": {

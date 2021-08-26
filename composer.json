@@ -10,9 +10,16 @@
     },
     "authors": [
         {
+            "name": "Dmitry Erofeev",
+            "email": "dmeroff@gmail.com",
+            "homepage": "http://dmeroff.ru",
+            "role": "original author"
+        },
+        {
             "name": "Bayu Setiawan",
             "email": "bajhoe@gmail.com",
-            "homepage": "https://bajhoe.web.id"
+            "homepage": "https://bajhoe.web.id",
+            "role": "forker and maintainer"
         }
     ],
     "minimum-stability": "dev",

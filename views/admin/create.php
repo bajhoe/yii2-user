@@ -58,14 +58,14 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?= Yii::t('user', 'A password will be generated automatically if not provided') ?>.
                 </div>
                 <?php $form = ActiveForm::begin([
-                    'layout' => 'horizontal',
+                    'layout' => 'floating',
                     'enableAjaxValidation' => true,
                     'enableClientValidation' => false,
-                    'fieldConfig' => [
-                        'horizontalCssClasses' => [
-                            'wrapper' => 'col-sm-9',
-                        ],
-                    ],
+                    // 'fieldConfig' => [
+                    //     'horizontalCssClasses' => [
+                    //         'wrapper' => 'col-sm-9',
+                    //     ],
+                    // ],
                 ]); ?>
 
                 <?= $this->render('_user', ['form' => $form, 'user' => $user]) ?>

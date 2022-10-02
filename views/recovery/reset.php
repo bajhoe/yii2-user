@@ -10,11 +10,11 @@
  */
 
 use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use yii\boostrap5\ActiveForm;
 
 /**
  * @var yii\web\View $this
- * @var yii\widgets\ActiveForm $form
+ * @var yii\bootstrap5\ActiveForm $form
  * @var dektrium\user\models\RecoveryForm $model
  */
 
@@ -29,6 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="panel-body">
                 <?php $form = ActiveForm::begin([
+                    'layout' => 'floating',
                     'id' => 'password-recovery-form',
                     'enableAjaxValidation' => true,
                     'enableClientValidation' => false,

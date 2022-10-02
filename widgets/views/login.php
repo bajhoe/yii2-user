@@ -10,12 +10,12 @@
  */
 
 use yii\helpers\Url;
-use yii\widgets\ActiveForm;
+use yii\bootstrap5\ActiveForm;
 use yii\helpers\Html;
 
 /**
  * @var yii\web\View                   $this
- * @var yii\widgets\ActiveForm         $form
+ * @var yii\bootstrap5\ActiveForm         $form
  * @var dektrium\user\models\LoginForm $model
  * @var string                         $action
  */
@@ -25,6 +25,7 @@ use yii\helpers\Html;
 <?php if (Yii::$app->user->isGuest): ?>
     <?php $form = ActiveForm::begin([
         'id'                     => 'login-widget-form',
+        'layout'                 => 'floating',
         'action'                 => Url::to(['/user/security/login']),
         'enableAjaxValidation'   => true,
         'enableClientValidation' => false,

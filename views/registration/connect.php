@@ -10,7 +10,7 @@
  */
 
 use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use yii\bootstrap5\ActiveForm;
 
 /**
  * @var yii\web\View $this
@@ -39,6 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
                 <?php $form = ActiveForm::begin([
                     'id' => 'connect-account-form',
+                    'layout' => 'floating',
                 ]); ?>
 
                 <?= $form->field($model, 'email') ?>

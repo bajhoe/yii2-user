@@ -13,7 +13,7 @@ namespace dektrium\user\traits;
 
 use yii\base\Model;
 use yii\web\Response;
-use yii\widgets\ActiveForm;
+use yii\bootstrap5\ActiveForm;
 
 /**
  * @author Dmitry Erofeev <dmeroff@gmail.com>

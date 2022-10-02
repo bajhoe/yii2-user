@@ -14,7 +14,7 @@ use yii\helpers\Html;
 
 /**
  * @var $this yii\web\View
- * @var $form yii\widgets\ActiveForm
+ * @var $form yii\bootstrap5\ActiveForm
  */
 
 $this->title = Yii::t('user', 'Networks');

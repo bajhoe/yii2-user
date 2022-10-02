@@ -11,12 +11,12 @@
 
 use yii\helpers\Html;
 use dektrium\user\helpers\Timezone;
-use yii\widgets\ActiveForm;
+use yii\bootstrap5\ActiveForm;
 use yii\helpers\ArrayHelper;
 
 /**
  * @var yii\web\View $this
- * @var yii\widgets\ActiveForm $form
+ * @var yii\bootstrap5\ActiveForm $form
  * @var dektrium\user\models\Profile $model
  */
 
@@ -38,6 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="panel-body">
                 <?php $form = ActiveForm::begin([
                     'id' => 'profile-form',
+                    'layout' => 'floating',
                     'options' => ['class' => 'form-horizontal'],
                     'fieldConfig' => [
                         'template' => "{label}\n<div class=\"col-lg-9\">{input}</div>\n<div class=\"col-sm-offset-3 col-lg-9\">{error}\n{hint}</div>",

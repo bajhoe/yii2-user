@@ -22,7 +22,7 @@ use yii\helpers\Html;
 <?php $this->beginContent('@dektrium/user/views/admin/update.php', ['user' => $user]) ?>
 
 <?php $form = ActiveForm::begin([
-    'layout' => 'horizontal',
+    'layout' => 'floating',
     'enableAjaxValidation' => true,
     'enableClientValidation' => false,
     'fieldConfig' => [

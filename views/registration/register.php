@@ -10,7 +10,7 @@
  */
 
 use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use yii\bootstrap5\ActiveForm;
 
 /**
  * @var yii\web\View $this
@@ -30,6 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="panel-body">
                 <?php $form = ActiveForm::begin([
                     'id' => 'registration-form',
+                    'layout' => 'floating',
                     'enableAjaxValidation' => true,
                     'enableClientValidation' => false,
                 ]); ?>

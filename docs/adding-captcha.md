@@ -56,12 +56,12 @@ form, just copy and paste following code into newly created view file.
     <?php
 
     use yii\helpers\Html;
-    use yii\widgets\ActiveForm;
+    use yii\bootstrap5\ActiveForm;
     use yii\captcha\Captcha;
 
     /**
      * @var yii\web\View $this
-     * @var yii\widgets\ActiveForm $form
+     * @var yii\bootstrap5\ActiveForm $form
      * @var app\models\RegistrationForm $model
      */
     $this->title = Yii::t('user', 'Sign up');
@@ -76,6 +76,7 @@ form, just copy and paste following code into newly created view file.
                 <div class="panel-body">
                     <?php $form = ActiveForm::begin([
                         'id' => 'registration-form',
+                        'layout' => 'floating',
                     ]); ?>
 
                     <?= $form->field($model, 'username') ?>

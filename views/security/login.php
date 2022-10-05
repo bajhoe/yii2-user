@@ -72,17 +72,18 @@ $this->params['breadcrumbs'][] = $this->title;
                         ->passwordInput()
                         ->label(
                             Yii::t('user', 'Password')
-                            . ($module->enablePasswordRecovery ?
+                        ) ?>
+                <?php endif ?>
+
+                <?= $form->field($model, 'rememberMe')->checkbox(['tabindex' => '3']) ?>
+
+                <?=($module->enablePasswordRecovery ?
                                 ' (' . Html::a(
                                     Yii::t('user', 'Forgot password?'),
                                     ['/user/recovery/request'],
                                     ['tabindex' => '5']
                                 )
-                                . ')' : '')
-                        ) ?>
-                <?php endif ?>
-
-                <?= $form->field($model, 'rememberMe')->checkbox(['tabindex' => '3']) ?>
+                                . ')' : '')?>
 
                 <?= Html::submitButton(
                     Yii::t('user', 'Sign in'),

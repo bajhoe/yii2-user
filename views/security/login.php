@@ -77,14 +77,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?= $form->field($model, 'rememberMe')->checkbox(['tabindex' => '3']) ?>
 
-                <?=($module->enablePasswordRecovery ?
-                                ' (' . Html::a(
-                                    Yii::t('user', 'Forgot password?'),
-                                    ['/user/recovery/request'],
-                                    ['tabindex' => '5']
-                                )
-                                . ')' : '')?>
-
                 <?= Html::submitButton(
                     Yii::t('user', 'Sign in'),
                     ['class' => 'btn btn-primary btn-block', 'tabindex' => '4']
@@ -93,6 +85,11 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?php ActiveForm::end(); ?>
             </div>
         </div>
+
+        <?php if($module->enablePasswordRecovery) :?>
+            <p class="text-center">
+            <?= Html::a(Yii::t('user', 'Forgot password?'), ['/user/recovery/request']) ?>
+            </p>
         <?php if ($module->enableConfirmation): ?>
             <p class="text-center">
                 <?= Html::a(Yii::t('user', 'Didn\'t receive confirmation message?'), ['/user/registration/resend']) ?>

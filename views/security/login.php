@@ -88,8 +88,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
         <?php if($module->enablePasswordRecovery) :?>
             <p class="text-center">
-            <?= Html::a(Yii::t('user', 'Forgot password?'), ['/user/recovery/request']) ?>
+                <?= Html::a(Yii::t('user', 'Forgot password?'), ['/user/recovery/request']) ?>
             </p>
+        <?php endif ?>
         <?php if ($module->enableConfirmation): ?>
             <p class="text-center">
                 <?= Html::a(Yii::t('user', 'Didn\'t receive confirmation message?'), ['/user/registration/resend']) ?>

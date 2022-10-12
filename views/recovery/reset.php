@@ -11,6 +11,7 @@
 
 use yii\helpers\Html;
 use yii\boostrap5\ActiveForm;
+use yii\boostrap5\Button;
 
 /**
  * @var yii\web\View $this
@@ -37,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?= $form->field($model, 'password')->passwordInput() ?>
 
-                <?= Html::submitButton(Yii::t('user', 'Finish'), ['class' => 'btn btn-success btn-block']) ?><br>
+                <?= Button::widget(Yii::t('user', 'Finish'), ['class' => 'btn btn-success btn-block'], 'type'=>'submit') ?><br>
 
                 <?php ActiveForm::end(); ?>
             </div>

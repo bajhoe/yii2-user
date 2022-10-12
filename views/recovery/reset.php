@@ -35,10 +35,12 @@ $this->params['breadcrumbs'][] = $this->title;
                     'enableAjaxValidation' => true,
                     'enableClientValidation' => false,
                 ]); ?>
-
-                <?= $form->field($model, 'password')->passwordInput() ?>
-
-                <?= Button::widget(Yii::t('user', 'Finish'), ['class' => 'btn btn-success btn-block','type'=>'submit']) ?><br>
+                <div class="row">
+                    <?= $form->field($model, 'password')->passwordInput() ?>
+                </div>
+                <div class="row">
+                    <?= Button::widget(Yii::t('user', 'Finish'), ['class' => 'btn btn-success btn-block','type'=>'submit']) ?><br>
+                </div>
 
                 <?php ActiveForm::end(); ?>
             </div>

@@ -11,8 +11,9 @@
 
 namespace dektrium\user\widgets;
 
-use yii\widgets\Menu;
+// use yii\widgets\Menu;
 // use yii\bootstrap5\Menu;
+use yii\bootstrap5\Nav;
 use Yii;
 use yii\base\Widget;
 
@@ -47,7 +48,7 @@ class UserMenu extends Widget
      */
     public function run()
     {
-        return Menu::widget([
+        return Nav::widget([
             'options' => [
                 'class' => 'nav-pills nav-stacked',
             ],

@@ -49,8 +49,7 @@ class UserMenu extends Widget
     {
         return Menu::widget([
             'options' => [
-                'class' => 'nav-tabs',
-                'style' => 'margin-bottom: 15px',
+                'class' => 'nav-pills nav-stacked',
             ],
             'items' => $this->items,
         ]);

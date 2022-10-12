@@ -26,6 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?= Html::img($profile->getAvatarUrl(230), [
                     'class' => 'img-rounded img-responsive',
                     'alt' => $profile->user->username,
+                    'width'=> '100%'
                 ]) ?>
             </div>
             <div class="col-sm-6 col-md-8">

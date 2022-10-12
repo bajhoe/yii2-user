@@ -32,13 +32,12 @@ class UserMenu extends Widget
         $networksVisible = count(Yii::$app->authClientCollection->clients) > 0;
         
         $this->items = [
-                ['label' => Yii::t('user', 'Profile'), 'url' => ['/user/settings/profile'], 'options' => ['class'=> 'nav-link']],
-                ['label' => Yii::t('user', 'Account'), 'url' => ['/user/settings/account'], 'options' => ['class'=> 'nav-link']],
+                ['label' => Yii::t('user', 'Profile'), 'url' => ['/user/settings/profile']],
+                ['label' => Yii::t('user', 'Account'), 'url' => ['/user/settings/account']],
                 [
                     'label' => Yii::t('user', 'Networks'),
                     'url' => ['/user/settings/networks'],
-                    'visible' => $networksVisible,
-                    'options' => ['class'=> 'nav-link'],
+                    'visible' => $networksVisible
                 ],
             ];
     }
@@ -50,7 +49,8 @@ class UserMenu extends Widget
     {
         return Menu::widget([
             'options' => [
-                'class' => 'nav nav-pills',
+                'class' => 'nav-tabs',
+                'style' => 'margin-bottom: 15px',
             ],
             'items' => $this->items,
         ]);

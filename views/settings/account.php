@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     'layout' => 'floating',
                     'options' => ['class' => 'form-horizontal'],
                     'fieldConfig' => [
-                        'template' => "{label}\n<div class=\"col-lg-9\">{input}</div>\n<div class=\"col-sm-offset-3 col-lg-9\">{error}\n{hint}</div>",
+                        // 'template' => "{label}\n<div class=\"col-lg-9\">{input}</div>\n<div class=\"col-sm-offset-3 col-lg-9\">{error}\n{hint}</div>",
                         'labelOptions' => ['class' => 'col-lg-3 control-label'],
                     ],
                     'enableAjaxValidation' => true,

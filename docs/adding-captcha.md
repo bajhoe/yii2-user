@@ -55,7 +55,7 @@ form, just copy and paste following code into newly created view file.
 
     <?php
 
-    use yii\helpers\Html;
+    use yii\bootstrap5\Html;
     use yii\bootstrap5\ActiveForm;
     use yii\captcha\Captcha;
 

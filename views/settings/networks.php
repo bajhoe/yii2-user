@@ -10,7 +10,7 @@
  */
 
 use dektrium\user\widgets\Connect;
-use yii\helpers\Html;
+use yii\bootstrap5\Html;
 
 /**
  * @var $this yii\web\View

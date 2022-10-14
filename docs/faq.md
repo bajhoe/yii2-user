@@ -34,8 +34,8 @@ You can use Login widget to achieve this:
 <?php
 
 use dektrium\user\widgets\Login;
-use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use yii\bootstrap5\Html;
+use yii\bootstrap5\ActiveForm;
 
 /**
  * @var yii\web\View              $this

@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-use yii\helpers\Html;
+use yii\bootstrap5\Html;
 use yii\bootstrap5\ActiveForm;
 
 /**
  * @var yii\web\View $this
- * @var yii\widgets\ActiveForm $form
+ * @var yii\bootstrap5\ActiveForm $form
  * @var dektrium\user\models\User $model
  * @var dektrium\user\models\Account $account
  */

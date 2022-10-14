@@ -31,12 +31,12 @@ and paste in the following code:
 
 ```php
 <?php
-use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use yii\bootstrap5\Html;
+use yii\bootstrap5\ActiveForm;
 
 /**
  * @var yii\web\View              $this
- * @var yii\widgets\ActiveForm    $form
+ * @var yii\bootstrap5\ActiveForm    $form
  * @var dektrium\user\models\User $user
  */
 

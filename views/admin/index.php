@@ -10,7 +10,7 @@
  */
 
 use yii\grid\GridView;
-use yii\helpers\Html;
+use yii\bootstrap5\Html;
 use yii\helpers\Url;
 use yii\web\View;
 use yii\widgets\Pjax;

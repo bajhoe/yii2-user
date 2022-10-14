@@ -7,7 +7,7 @@ use dektrium\user\Module;
 use tests\_fixtures\UserFixture;
 use tests\_pages\LoginPage;
 use tests\_pages\RegistrationPage;
-use yii\helpers\Html;
+use yii\bootstrap5\Html;
 
 class RegistrationCest
 {

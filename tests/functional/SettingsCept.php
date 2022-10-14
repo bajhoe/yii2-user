@@ -10,7 +10,7 @@ use tests\_fixtures\ProfileFixture;
 use tests\_fixtures\UserFixture;
 use tests\_pages\LoginPage;
 use tests\_pages\SettingsPage;
-use yii\helpers\Html;
+use yii\bootstrap5\Html;
 
 $I = new FunctionalTester($scenario);
 $I->wantTo('ensure that account settings page work');

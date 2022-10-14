@@ -15,7 +15,7 @@ use dektrium\user\Finder;
 use dektrium\user\helpers\Password;
 use dektrium\user\traits\ModuleTrait;
 use yii\helpers\ArrayHelper;
-use yii\helpers\Html;
+use yii\bootstrap5\Html;
 use Yii;
 use yii\base\Model;
 

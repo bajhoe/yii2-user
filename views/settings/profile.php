@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-use yii\helpers\Html;
+use yii\bootstrap5\Html;
 use dektrium\user\helpers\Timezone;
 use yii\bootstrap5\ActiveForm;
 use yii\helpers\ArrayHelper;

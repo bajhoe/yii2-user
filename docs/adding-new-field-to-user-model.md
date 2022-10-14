@@ -65,7 +65,7 @@ with the following content:
 <?php
 
 /**
- * @var yii\widgets\ActiveForm    $form
+ * @var yii\bootstrap5\ActiveForm    $form
  * @var dektrium\user\models\User $user
  */
 
@@ -107,12 +107,12 @@ And the last thing you need to do is overriding registration form view file:
 
 ```php
 <?php
-use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use yii\bootstrap5\Html;
+use yii\bootstrap5\ActiveForm;
 
 /**
  * @var yii\web\View              $this
- * @var yii\widgets\ActiveForm    $form
+ * @var yii\bootstrap5\ActiveForm    $form
  * @var dektrium\user\models\User $user
  */
 

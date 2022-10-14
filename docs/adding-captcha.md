@@ -75,6 +75,7 @@ form, just copy and paste following code into newly created view file.
                 </div>
                 <div class="panel-body">
                     <?php $form = ActiveForm::begin([
+                        'layout' => 'floating',
                         'id' => 'registration-form',
                         'layout' => 'floating',
                     ]); ?>

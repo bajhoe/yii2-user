@@ -35,8 +35,8 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="panel-body">
                 <?php $form = ActiveForm::begin([
-                    'id' => 'account-form',
                     'layout' => 'floating',
+                    'id' => 'account-form',
                     'options' => ['class' => 'form-horizontal'],
                     'fieldConfig' => [
                         // 'template' => "{label}\n<div class=\"col-lg-9\">{input}</div>\n<div class=\"col-sm-offset-3 col-lg-9\">{error}\n{hint}</div>",

@@ -89,6 +89,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="panel-body">
                 <?php $form = ActiveForm::begin([
+                    'layout' => 'floating',
                     'id' => 'registration-form',
                 ]); ?>
                 

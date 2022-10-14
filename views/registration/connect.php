@@ -38,8 +38,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     </p>
                 </div>
                 <?php $form = ActiveForm::begin([
-                    'id' => 'connect-account-form',
                     'layout' => 'floating',
+                    'id' => 'connect-account-form',
                 ]); ?>
 
                 <?= $form->field($model, 'email') ?>

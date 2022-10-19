@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-use dektrium\user\widgets\Connect;
-use dektrium\user\models\LoginForm;
+use bajhoe\user\widgets\Connect;
+use bajhoe\user\models\LoginForm;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\ActiveForm;
 
 /**
  * @var yii\web\View $this
- * @var dektrium\user\models\LoginForm $model
- * @var dektrium\user\Module $module
+ * @var bajhoe\user\models\LoginForm $model
+ * @var bajhoe\user\Module $module
  */
 
 $this->title = Yii::t('user', 'Sign in');

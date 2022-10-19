@@ -10,10 +10,10 @@ return [
         '@vendor' => VENDOR_DIR,
         '@bower' => VENDOR_DIR . '/bower-asset',
     ],
-    'bootstrap' => ['dektrium\user\Bootstrap'],
+    'bootstrap' => ['bajhoe\user\Bootstrap'],
     'modules' => [
         'user' => [
-            'class' => 'dektrium\user\Module',
+            'class' => 'bajhoe\user\Module',
             'admins' => ['user'],
         ],
     ],

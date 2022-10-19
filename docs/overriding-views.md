@@ -37,7 +37,7 @@ use yii\bootstrap5\ActiveForm;
 /**
  * @var yii\web\View              $this
  * @var yii\bootstrap5\ActiveForm    $form
- * @var dektrium\user\models\User $user
+ * @var bajhoe\user\models\User $user
  */
 
 $this->title = Yii::t('user', 'Sign up');

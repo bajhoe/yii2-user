@@ -16,7 +16,7 @@ use yii\boostrap5\Button;
 /**
  * @var yii\web\View $this
  * @var yii\bootstrap5\ActiveForm $form
- * @var dektrium\user\models\RecoveryForm $model
+ * @var bajhoe\user\models\RecoveryForm $model
  */
 
 $this->title = Yii::t('user', 'Reset your password');

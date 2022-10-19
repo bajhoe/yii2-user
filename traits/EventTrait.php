@@ -9,19 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\traits;
+namespace bajhoe\user\traits;
 
-use dektrium\user\events\AuthEvent;
-use dektrium\user\events\ConnectEvent;
-use dektrium\user\events\FormEvent;
-use dektrium\user\events\ProfileEvent;
-use dektrium\user\events\ResetPasswordEvent;
-use dektrium\user\events\UserEvent;
-use dektrium\user\models\Account;
-use dektrium\user\models\Profile;
-use dektrium\user\models\RecoveryForm;
-use dektrium\user\models\Token;
-use dektrium\user\models\User;
+use bajhoe\user\events\AuthEvent;
+use bajhoe\user\events\ConnectEvent;
+use bajhoe\user\events\FormEvent;
+use bajhoe\user\events\ProfileEvent;
+use bajhoe\user\events\ResetPasswordEvent;
+use bajhoe\user\events\UserEvent;
+use bajhoe\user\models\Account;
+use bajhoe\user\models\Profile;
+use bajhoe\user\models\RecoveryForm;
+use bajhoe\user\models\Token;
+use bajhoe\user\models\User;
 use yii\authclient\ClientInterface;
 use yii\base\Model;
 

@@ -11,7 +11,7 @@
 
 /**
  * @var yii\bootstrap5\ActiveForm $form
- * @var dektrium\user\models\User $user
+ * @var bajhoe\user\models\User $user
  */
 ?>
 

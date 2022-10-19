@@ -10,10 +10,10 @@
  */
 
 use yii\bootstrap5\Html;
-use dektrium\user\widgets\UserMenu;
+use bajhoe\user\widgets\UserMenu;
 
 /**
- * @var dektrium\user\models\User $user
+ * @var bajhoe\user\models\User $user
  */
 
 $user = Yii::$app->user->identity;

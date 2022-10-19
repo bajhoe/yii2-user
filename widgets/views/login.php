@@ -16,7 +16,7 @@ use yii\bootstrap5\Html;
 /**
  * @var yii\web\View                   $this
  * @var yii\bootstrap5\ActiveForm         $form
- * @var dektrium\user\models\LoginForm $model
+ * @var bajhoe\user\models\LoginForm $model
  * @var string                         $action
  */
 

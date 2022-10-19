@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace bajhoe\user\models;
 
-use dektrium\user\traits\ModuleTrait;
+use bajhoe\user\traits\ModuleTrait;
 use yii\db\ActiveRecord;
 
 /**
@@ -33,7 +33,7 @@ use yii\db\ActiveRecord;
 class Profile extends ActiveRecord
 {
     use ModuleTrait;
-    /** @var \dektrium\user\Module */
+    /** @var \bajhoe\user\Module */
     protected $module;
 
     /** @inheritdoc */

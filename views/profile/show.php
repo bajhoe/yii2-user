@@ -13,7 +13,7 @@ use yii\bootstrap5\Html;
 
 /**
  * @var \yii\web\View $this
- * @var \dektrium\user\models\Profile $profile
+ * @var \bajhoe\user\models\Profile $profile
  */
 
 $this->title = empty($profile->name) ? Html::encode($profile->user->username) : Html::encode($profile->name);

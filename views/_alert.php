@@ -12,7 +12,7 @@
 use yii\bootstrap5\Alert;
 
 /**
- * @var dektrium\user\Module $module
+ * @var bajhoe\user\Module $module
  */
 ?>
 

@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace bajhoe\user\models;
 
-use dektrium\user\Finder;
-use dektrium\user\Mailer;
+use bajhoe\user\Finder;
+use bajhoe\user\Mailer;
 use yii\base\Model;
 
 /**

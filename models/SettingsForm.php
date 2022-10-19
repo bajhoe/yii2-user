@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace bajhoe\user\models;
 
-use dektrium\user\helpers\Password;
-use dektrium\user\Mailer;
-use dektrium\user\Module;
-use dektrium\user\traits\ModuleTrait;
+use bajhoe\user\helpers\Password;
+use bajhoe\user\Mailer;
+use bajhoe\user\Module;
+use bajhoe\user\traits\ModuleTrait;
 use Yii;
 use yii\base\Model;
 

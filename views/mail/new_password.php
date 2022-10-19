@@ -12,9 +12,9 @@
 use yii\bootstrap5\Html;
 
 /**
- * @var dektrium\user\Module          $module
- * @var dektrium\user\models\User     $user
- * @var dektrium\user\models\Password $password
+ * @var bajhoe\user\Module          $module
+ * @var bajhoe\user\models\User     $user
+ * @var bajhoe\user\models\Password $password
  */
 
 ?>

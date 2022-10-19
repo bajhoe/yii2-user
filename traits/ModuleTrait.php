@@ -1,14 +1,14 @@
 <?php
 
-namespace dektrium\user\traits;
+namespace bajhoe\user\traits;
 
-use dektrium\user\Module;
+use bajhoe\user\Module;
 
 /**
  * Trait ModuleTrait
  *
  * @property-read Module $module
- * @package dektrium\user\traits
+ * @package bajhoe\user\traits
  */
 trait ModuleTrait
 {

@@ -11,7 +11,7 @@
 
 /**
  * @var yii\web\View $this
- * @var dektrium\user\Module $module
+ * @var bajhoe\user\Module $module
  */
 
 $this->title = $title;

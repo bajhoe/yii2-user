@@ -14,8 +14,8 @@ use yii\bootstrap5\ActiveForm;
 
 /**
  * @var yii\web\View $this
- * @var dektrium\user\models\User $model
- * @var dektrium\user\Module $module
+ * @var bajhoe\user\models\User $model
+ * @var bajhoe\user\Module $module
  */
 
 $this->title = Yii::t('user', 'Sign up');

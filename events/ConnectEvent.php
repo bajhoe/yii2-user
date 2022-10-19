@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\events;
+namespace bajhoe\user\events;
 
-use dektrium\user\models\User;
-use dektrium\user\models\Account;
+use bajhoe\user\models\User;
+use bajhoe\user\models\Account;
 use yii\base\Event;
 
 /**

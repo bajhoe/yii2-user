@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace bajhoe\user\models;
 
-use dektrium\user\Finder;
-use dektrium\user\helpers\Password;
-use dektrium\user\traits\ModuleTrait;
+use bajhoe\user\Finder;
+use bajhoe\user\helpers\Password;
+use bajhoe\user\traits\ModuleTrait;
 use yii\helpers\ArrayHelper;
 use yii\bootstrap5\Html;
 use Yii;
@@ -38,7 +38,7 @@ class LoginForm extends Model
     /** @var string Whether to remember the user */
     public $rememberMe = false;
 
-    /** @var \dektrium\user\models\User */
+    /** @var \bajhoe\user\models\User */
     protected $user;
 
     /** @var Finder */
@@ -61,7 +61,7 @@ class LoginForm extends Model
      */
     public static function loginList()
     {
-        /** @var \dektrium\user\Module $module */
+        /** @var \bajhoe\user\Module $module */
         $module = \Yii::$app->getModule('user');
 
         $userModel = $module->modelMap['User'];

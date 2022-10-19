@@ -10,14 +10,14 @@
  */
 
 use yii\bootstrap5\Html;
-use dektrium\user\helpers\Timezone;
+use bajhoe\user\helpers\Timezone;
 use yii\bootstrap5\ActiveForm;
 use yii\helpers\ArrayHelper;
 
 /**
  * @var yii\web\View $this
  * @var yii\bootstrap5\ActiveForm $form
- * @var dektrium\user\models\Profile $model
+ * @var bajhoe\user\models\Profile $model
  */
 
 $this->title = Yii::t('user', 'Profile settings');

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\widgets;
+namespace bajhoe\user\widgets;
 
 // use yii\widgets\Menu;
 // use yii\bootstrap5\Menu;
@@ -23,7 +23,7 @@ use yii\base\Widget;
 class UserMenu extends Widget
 {
     
-    /** @array \dektrium\user\models\RegistrationForm */
+    /** @array \bajhoe\user\models\RegistrationForm */
     public $items;
     
     public function init()

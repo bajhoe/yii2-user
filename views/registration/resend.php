@@ -14,7 +14,7 @@ use yii\bootstrap5\ActiveForm;
 
 /**
  * @var yii\web\View $this
- * @var dektrium\user\models\ResendForm $model
+ * @var bajhoe\user\models\ResendForm $model
  */
 
 $this->title = Yii::t('user', 'Request new confirmation message');

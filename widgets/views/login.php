@@ -40,7 +40,7 @@ use yii\bootstrap5\Html;
 
     <?= $form->field($model, 'rememberMe')->checkbox() ?>
 
-    <?= Html::submitButton(Yii::t('user', 'Sign in'), ['class' => 'btn btn-primary btn-block']) ?>
+    <?= Html::submitButton(Yii::t('user', 'Sign in'), ['class' => 'btn btn-primary btn-block mt-3']) ?>
 
     <?php ActiveForm::end(); ?>
 <?php else: ?>

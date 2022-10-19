@@ -79,7 +79,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?= Html::submitButton(
                     Yii::t('user', 'Sign in'),
-                    ['class' => 'btn btn-primary btn-block', 'tabindex' => '4']
+                    ['class' => 'btn btn-primary btn-block mt-3', 'tabindex' => '4']
                 ) ?>
 
                 <?php ActiveForm::end(); ?>

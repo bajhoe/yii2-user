@@ -62,7 +62,7 @@ echo Nav::widget([
         Yii::$app->session->has(\infinindotech\user\controllers\AdminController::ORIGINAL_USER_SESSION_KEY) ?
         '<li>' . Html::beginForm(['/user/admin/switch'], 'post', ['class' => 'navbar-form'])
             . Html::submitButton('<span class="glyphicon glyphicon-user"></span> ' . Yii::t('user', 'Back to original user'),
-                ['class' => 'btn btn-link']
+                ['class' => 'btn btn-link mt-3']
             ) . Html::endForm() . '</li>' : '',
       ],
     ]);

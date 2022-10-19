@@ -20,6 +20,12 @@
             "email": "bajhoe@gmail.com",
             "homepage": "https://bajhoe.web.id",
             "role": "forker and maintainer"
+        },
+        {
+            "name": "Aditiya Sidabutar",
+            "email": "sidabutaraditiya@gmail.com",
+            "homepage": "https://sidabutar.web.id",
+            "role": "maintainer"
         }
     ],
     "minimum-stability": "dev",

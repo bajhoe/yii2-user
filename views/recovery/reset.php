@@ -39,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?= $form->field($model, 'password')->passwordInput() ?>
                 </div>
                 <div class="row">
-                    <?= Button::widget(Yii::t('user', 'Finish'), ['class' => 'btn btn-success btn-block','type'=>'submit']) ?><br>
+                    <?= Button::widget(Yii::t('user', 'Finish'), ['class' => 'btn btn-success btn-block mt-3','type'=>'submit']) ?><br>
                 </div>
 
                 <?php ActiveForm::end(); ?>

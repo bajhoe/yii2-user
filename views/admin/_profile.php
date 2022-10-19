@@ -41,7 +41,7 @@ use yii\bootstrap5\Html;
 
 <div class="form-group">
     <div class="col-lg-offset-3 col-lg-9">
-        <?= Html::submitButton(Yii::t('user', 'Update'), ['class' => 'btn btn-block btn-success']) ?>
+        <?= Html::submitButton(Yii::t('user', 'Update'), ['class' => 'btn btn-block btn-success mt-3']) ?>
     </div>
 </div>
 

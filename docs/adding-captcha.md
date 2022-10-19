@@ -90,7 +90,7 @@ form, just copy and paste following code into newly created view file.
                         'captchaAction' => ['/site/captcha']
                     ]) ?>
 
-                    <?= Html::submitButton(Yii::t('user', 'Sign up'), ['class' => 'btn btn-success btn-block']) ?>
+                    <?= Html::submitButton(Yii::t('user', 'Sign up'), ['class' => 'btn btn-success btn-block mt-3']) ?>
 
                     <?php ActiveForm::end(); ?>
                 </div>

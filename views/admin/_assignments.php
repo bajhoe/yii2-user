@@ -17,7 +17,7 @@ use bajhoe\rbac\widgets\Assignments;
  */
 ?>
 
-<?php $this->beginContent('@dektrium/user/views/admin/update.php', ['user' => $user]) ?>
+<?php $this->beginContent('@bajhoe/user/views/admin/update.php', ['user' => $user]) ?>
 
 <?= yii\bootstrap5\Alert::widget([
     'options' => [

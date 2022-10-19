@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\models;
+namespace infinindotech\user\models;
 
-use bajhoe\user\helpers\Password;
-use bajhoe\user\Mailer;
-use bajhoe\user\Module;
-use bajhoe\user\traits\ModuleTrait;
+use infinindotech\user\helpers\Password;
+use infinindotech\user\Mailer;
+use infinindotech\user\Module;
+use infinindotech\user\traits\ModuleTrait;
 use Yii;
 use yii\base\Model;
 

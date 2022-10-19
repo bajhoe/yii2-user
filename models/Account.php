@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\models;
+namespace infinindotech\user\models;
 
-use bajhoe\user\clients\ClientInterface;
-use bajhoe\user\Finder;
-use bajhoe\user\models\query\AccountQuery;
-use bajhoe\user\traits\ModuleTrait;
+use infinindotech\user\clients\ClientInterface;
+use infinindotech\user\Finder;
+use infinindotech\user\models\query\AccountQuery;
+use infinindotech\user\traits\ModuleTrait;
 use yii\authclient\ClientInterface as BaseClientInterface;
 use yii\db\ActiveRecord;
 use yii\helpers\Json;

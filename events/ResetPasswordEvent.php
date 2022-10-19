@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\events;
+namespace infinindotech\user\events;
 
-use bajhoe\user\models\RecoveryForm;
-use bajhoe\user\models\Token;
+use infinindotech\user\models\RecoveryForm;
+use infinindotech\user\models\Token;
 use yii\base\Event;
 
 /**

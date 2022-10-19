@@ -32,7 +32,7 @@ And now you can apply that migration by running `php yii migrate`.
 Override `User` model as described in [guide](overriding-models.md) and add following lines to the overridden model:
 
 ```php
-class User extends \bajhoe\user\models\User
+class User extends \infinindotech\user\models\User
 {
     public function scenarios()
     {
@@ -58,7 +58,7 @@ class User extends \bajhoe\user\models\User
 
 ## Adding field to the admin form
 
-You should override view file `@bajhoe/user/views/admin/_user.php` as described in [special guide](overriding-views.md)
+You should override view file `@infinindotech/user/views/admin/_user.php` as described in [special guide](overriding-views.md)
 with the following content:
 
 ```php
@@ -66,7 +66,7 @@ with the following content:
 
 /**
  * @var yii\bootstrap5\ActiveForm    $form
- * @var bajhoe\user\models\User $user
+ * @var infinindotech\user\models\User $user
  */
 
 ?>
@@ -84,7 +84,7 @@ overriding registration form. Since all the fields of registration form are pass
 a field and appropriate validation rules:
 
 ```php
-class RegistrationForm extends \bajhoe\user\models\RegistrationForm
+class RegistrationForm extends \infinindotech\user\models\RegistrationForm
 {
     /**
      * @var string
@@ -113,7 +113,7 @@ use yii\bootstrap5\ActiveForm;
 /**
  * @var yii\web\View              $this
  * @var yii\bootstrap5\ActiveForm    $form
- * @var bajhoe\user\models\User $user
+ * @var infinindotech\user\models\User $user
  */
 
 $this->title = Yii::t('user', 'Sign up');

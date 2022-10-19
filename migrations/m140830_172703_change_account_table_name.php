@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-use bajhoe\user\migrations\Migration;
+use infinindotech\user\migrations\Migration;
 
 /**
  * @author Dmitry Erofeev <dmeroff@gmail.com>

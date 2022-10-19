@@ -9,9 +9,9 @@ Let's start with overriding the registration form model:
 ```php
 namespace app\models;
 
-use bajhoe\user\models\Profile;
-use bajhoe\user\models\RegistrationForm as BaseRegistrationForm;
-use bajhoe\user\models\User;
+use infinindotech\user\models\Profile;
+use infinindotech\user\models\RegistrationForm as BaseRegistrationForm;
+use infinindotech\user\models\User;
 
 class RegistrationForm extends BaseRegistrationForm
 {
@@ -75,7 +75,7 @@ use yii\bootstrap5\ActiveForm;
 /**
  * @var yii\web\View              $this
  * @var yii\bootstrap5\ActiveForm    $form
- * @var bajhoe\user\models\User $user
+ * @var infinindotech\user\models\User $user
  */
 
 $this->title = Yii::t('user', 'Sign up');

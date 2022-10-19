@@ -11,7 +11,7 @@
 
 /**
  * @var yii\bootstrap5\ActiveForm $form
- * @var bajhoe\user\models\User $user
+ * @var infinindotech\user\models\User $user
  */
 ?>
 

@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\controllers;
+namespace infinindotech\user\controllers;
 
-use bajhoe\user\Finder;
+use infinindotech\user\Finder;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -19,7 +19,7 @@ use yii\web\NotFoundHttpException;
 /**
  * ProfileController shows users profiles.
  *
- * @property \bajhoe\user\Module $module
+ * @property \infinindotech\user\Module $module
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */

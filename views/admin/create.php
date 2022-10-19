@@ -15,7 +15,7 @@ use yii\bootstrap5\Html;
 
 /**
  * @var yii\web\View $this
- * @var bajhoe\user\models\User $user
+ * @var infinindotech\user\models\User $user
  */
 
 $this->title = Yii::t('user', 'Create a user account');

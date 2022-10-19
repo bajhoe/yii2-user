@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\clients;
+namespace infinindotech\user\clients;
 
 use yii\authclient\clients\Facebook as BaseFacebook;
 

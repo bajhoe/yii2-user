@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\events;
+namespace infinindotech\user\events;
 
 use yii\base\Event;
 use yii\base\Model;

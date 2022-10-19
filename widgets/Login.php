@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\widgets;
+namespace infinindotech\user\widgets;
 
-use bajhoe\user\models\LoginForm;
+use infinindotech\user\models\LoginForm;
 use yii\base\Widget;
 
 /**

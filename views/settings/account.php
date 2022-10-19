@@ -15,7 +15,7 @@ use yii\bootstrap5\ActiveForm;
 /**
  * @var yii\web\View $this
  * @var yii\bootstrap5\ActiveForm $form
- * @var bajhoe\user\models\SettingsForm $model
+ * @var infinindotech\user\models\SettingsForm $model
  */
 
 $this->title = Yii::t('user', 'Account settings');

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user;
+namespace infinindotech\user;
 
 use yii\base\Module as BaseModule;
 

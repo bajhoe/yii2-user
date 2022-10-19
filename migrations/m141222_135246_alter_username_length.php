@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-use bajhoe\user\migrations\Migration;
+use infinindotech\user\migrations\Migration;
 
 class m141222_135246_alter_username_length extends Migration
 {

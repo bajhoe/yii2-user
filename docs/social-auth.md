@@ -42,7 +42,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'facebook' => [
-    'class'        => 'bajhoe\user\clients\Facebook',
+    'class'        => 'infinindotech\user\clients\Facebook',
     'clientId'     => 'APP_ID',
     'clientSecret' => 'APP_SECRET',
 ],
@@ -56,7 +56,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'twitter' => [
-    'class'          => 'bajhoe\user\clients\Twitter',
+    'class'          => 'infinindotech\user\clients\Twitter',
     'consumerKey'    => 'CONSUMER_KEY',
     'consumerSecret' => 'CONSUMER_SECRET',
 ],
@@ -65,7 +65,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'twitter' => [
-    'class'          => 'bajhoe\user\clients\Twitter',
+    'class'          => 'infinindotech\user\clients\Twitter',
     'consumerKey'    => 'CONSUMER_KEY',
     'consumerSecret' => 'CONSUMER_SECRET',
     'attributeParams' => [
@@ -84,7 +84,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'google' => [
-    'class'        => 'bajhoe\user\clients\Google',
+    'class'        => 'infinindotech\user\clients\Google',
     'clientId'     => 'CLIENT_ID',
     'clientSecret' => 'CLIENT_SECRET',
 ],
@@ -96,7 +96,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'github' => [
-    'class'        => 'bajhoe\user\clients\GitHub',
+    'class'        => 'infinindotech\user\clients\GitHub',
     'clientId'     => 'CLIENT_ID',
     'clientSecret' => 'CLIENT_SECRET',
 ],
@@ -108,7 +108,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'vkontakte' => [
-    'class'        => 'bajhoe\user\clients\VKontakte',
+    'class'        => 'infinindotech\user\clients\VKontakte',
     'clientId'     => 'CLIENT_ID',
     'clientSecret' => 'CLIENT_SECRET',
 ]
@@ -122,7 +122,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'yandex' => [
-    'class'        => 'bajhoe\user\clients\Yandex',
+    'class'        => 'infinindotech\user\clients\Yandex',
     'clientId'     => 'CLIENT_ID',
     'clientSecret' => 'CLIENT_SECRET'
 ],
@@ -134,7 +134,7 @@ Here is the list of clients supported by the module:
 
 ```php
 'linkedin' => [
-    'class'        => 'bajhoe\user\clients\LinkedIn',
+    'class'        => 'infinindotech\user\clients\LinkedIn',
     'clientId'     => 'CLIENT_ID',
     'clientSecret' => 'CLIENT_SECRET'
 ],
@@ -154,17 +154,17 @@ The following config allows to log in using 3 networks (Twitter, Facebook and Go
     'class' => yii\authclient\Collection::className(),
     'clients' => [
         'facebook' => [
-            'class'        => 'bajhoe\user\clients\Facebook',
+            'class'        => 'infinindotech\user\clients\Facebook',
             'clientId'     => 'CLIENT_ID',
             'clientSecret' => 'CLIENT_SECRET',
         ],
         'twitter' => [
-            'class'          => 'bajhoe\user\clients\Twitter',
+            'class'          => 'infinindotech\user\clients\Twitter',
             'consumerKey'    => 'CONSUMER_KEY',
             'consumerSecret' => 'CONSUMER_SECRET',
         ],
         'google' => [
-            'class'        => 'bajhoe\user\clients\Google',
+            'class'        => 'infinindotech\user\clients\Google',
             'clientId'     => 'CLIENT_ID',
             'clientSecret' => 'CLIENT_SECRET',
         ],
@@ -181,7 +181,7 @@ with the name provided via facebook:
 // plase this code somewhere in your config files (bootstrap.php in case of using advanced app template, web.php in case
 // of using basic app template
 
-use bajhoe\user\controllers\SecurityController; 
+use infinindotech\user\controllers\SecurityController; 
 
 Event::on(SecurityController::class, SecurityController::EVENT_AFTER_AUTHENTICATE, function (AuthEvent $e) {
     // if user account was not created we should not continue

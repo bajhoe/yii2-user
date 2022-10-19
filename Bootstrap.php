@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user;
+namespace infinindotech\user;
 
 use Yii;
 use yii\authclient\Collection;
@@ -27,16 +27,16 @@ class Bootstrap implements BootstrapInterface
 {
     /** @var array Model's map */
     private $_modelMap = [
-        'User'             => 'bajhoe\user\models\User',
-        'Account'          => 'bajhoe\user\models\Account',
-        'Profile'          => 'bajhoe\user\models\Profile',
-        'Token'            => 'bajhoe\user\models\Token',
-        'RegistrationForm' => 'bajhoe\user\models\RegistrationForm',
-        'ResendForm'       => 'bajhoe\user\models\ResendForm',
-        'LoginForm'        => 'bajhoe\user\models\LoginForm',
-        'SettingsForm'     => 'bajhoe\user\models\SettingsForm',
-        'RecoveryForm'     => 'bajhoe\user\models\RecoveryForm',
-        'UserSearch'       => 'bajhoe\user\models\UserSearch',
+        'User'             => 'infinindotech\user\models\User',
+        'Account'          => 'infinindotech\user\models\Account',
+        'Profile'          => 'infinindotech\user\models\Profile',
+        'Token'            => 'infinindotech\user\models\Token',
+        'RegistrationForm' => 'infinindotech\user\models\RegistrationForm',
+        'ResendForm'       => 'infinindotech\user\models\ResendForm',
+        'LoginForm'        => 'infinindotech\user\models\LoginForm',
+        'SettingsForm'     => 'infinindotech\user\models\SettingsForm',
+        'RecoveryForm'     => 'infinindotech\user\models\RecoveryForm',
+        'UserSearch'       => 'infinindotech\user\models\UserSearch',
     ];
 
     /** @inheritdoc */
@@ -47,7 +47,7 @@ class Bootstrap implements BootstrapInterface
         if ($app->hasModule('user') && ($module = $app->getModule('user')) instanceof Module) {
             $this->_modelMap = array_merge($this->_modelMap, $module->modelMap);
             foreach ($this->_modelMap as $name => $definition) {
-                $class = "bajhoe\\user\\models\\" . $name;
+                $class = "infinindotech\\user\\models\\" . $name;
                 Yii::$container->set($class, $definition);
                 $modelName = is_array($definition) ? $definition['class'] : $definition;
                 $module->modelMap[$name] = $modelName;
@@ -66,7 +66,7 @@ class Bootstrap implements BootstrapInterface
             ]);
 
             if ($app instanceof ConsoleApplication) {
-                $module->controllerNamespace = 'bajhoe\user\commands';
+                $module->controllerNamespace = 'infinindotech\user\commands';
             } else {
                 Yii::$container->set('yii\web\User', [
                     'enableAutoLogin' => true,
@@ -103,7 +103,7 @@ class Bootstrap implements BootstrapInterface
                 ];
             }
 
-            Yii::$container->set('bajhoe\user\Mailer', $module->mailer);
+            Yii::$container->set('infinindotech\user\Mailer', $module->mailer);
 
             $module->debug = $this->ensureCorrectDebugSetting();
         }

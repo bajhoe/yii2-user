@@ -1,9 +1,9 @@
 <?php
 
 
-use bajhoe\user\models\Token;
-use bajhoe\user\models\User;
-use bajhoe\user\Module;
+use infinindotech\user\models\Token;
+use infinindotech\user\models\User;
+use infinindotech\user\Module;
 use tests\_fixtures\UserFixture;
 use tests\_pages\LoginPage;
 use tests\_pages\RegistrationPage;

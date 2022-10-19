@@ -4,8 +4,8 @@
  * @var Codeception\Scenario $scenario
  */
 
-use bajhoe\user\models\Token;
-use bajhoe\user\models\User;
+use infinindotech\user\models\Token;
+use infinindotech\user\models\User;
 use tests\_fixtures\ProfileFixture;
 use tests\_fixtures\UserFixture;
 use tests\_pages\LoginPage;

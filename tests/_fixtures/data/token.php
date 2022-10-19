@@ -1,6 +1,6 @@
 <?php
 
-use \bajhoe\user\models\Token;
+use \infinindotech\user\models\Token;
 
 $time = time();
 

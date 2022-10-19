@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\controllers;
+namespace infinindotech\user\controllers;
 
-use bajhoe\user\Finder;
-use bajhoe\user\models\Account;
-use bajhoe\user\models\LoginForm;
-use bajhoe\user\models\User;
-use bajhoe\user\Module;
-use bajhoe\user\traits\AjaxValidationTrait;
-use bajhoe\user\traits\EventTrait;
+use infinindotech\user\Finder;
+use infinindotech\user\models\Account;
+use infinindotech\user\models\LoginForm;
+use infinindotech\user\models\User;
+use infinindotech\user\Module;
+use infinindotech\user\traits\AjaxValidationTrait;
+use infinindotech\user\traits\EventTrait;
 use yii\authclient\AuthAction;
 use yii\authclient\ClientInterface;
 use yii\filters\AccessControl;
@@ -40,49 +40,49 @@ class SecurityController extends Controller
 
     /**
      * Event is triggered before logging user in.
-     * Triggered with \bajhoe\user\events\FormEvent.
+     * Triggered with \infinindotech\user\events\FormEvent.
      */
     const EVENT_BEFORE_LOGIN = 'beforeLogin';
 
     /**
      * Event is triggered after logging user in.
-     * Triggered with \bajhoe\user\events\FormEvent.
+     * Triggered with \infinindotech\user\events\FormEvent.
      */
     const EVENT_AFTER_LOGIN = 'afterLogin';
 
     /**
      * Event is triggered before logging user out.
-     * Triggered with \bajhoe\user\events\UserEvent.
+     * Triggered with \infinindotech\user\events\UserEvent.
      */
     const EVENT_BEFORE_LOGOUT = 'beforeLogout';
 
     /**
      * Event is triggered after logging user out.
-     * Triggered with \bajhoe\user\events\UserEvent.
+     * Triggered with \infinindotech\user\events\UserEvent.
      */
     const EVENT_AFTER_LOGOUT = 'afterLogout';
 
     /**
      * Event is triggered before authenticating user via social network.
-     * Triggered with \bajhoe\user\events\AuthEvent.
+     * Triggered with \infinindotech\user\events\AuthEvent.
      */
     const EVENT_BEFORE_AUTHENTICATE = 'beforeAuthenticate';
 
     /**
      * Event is triggered after authenticating user via social network.
-     * Triggered with \bajhoe\user\events\AuthEvent.
+     * Triggered with \infinindotech\user\events\AuthEvent.
      */
     const EVENT_AFTER_AUTHENTICATE = 'afterAuthenticate';
 
     /**
      * Event is triggered before connecting social network account to user.
-     * Triggered with \bajhoe\user\events\AuthEvent.
+     * Triggered with \infinindotech\user\events\AuthEvent.
      */
     const EVENT_BEFORE_CONNECT = 'beforeConnect';
 
     /**
      * Event is triggered before connecting social network account to user.
-     * Triggered with \bajhoe\user\events\AuthEvent.
+     * Triggered with \infinindotech\user\events\AuthEvent.
      */
     const EVENT_AFTER_CONNECT = 'afterConnect';
 

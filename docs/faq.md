@@ -7,10 +7,10 @@ You can change controller's layout using `controllerMap` module's property:
 ```php
 'modules' => [
     'user' => [
-        'class' => 'bajhoe\user\Module',
+        'class' => 'infinindotech\user\Module',
         'controllerMap' => [
             'admin' => [
-                'class'  => 'bajhoe\user\controllers\AdminController',
+                'class'  => 'infinindotech\user\controllers\AdminController',
                 'layout' => '//admin-layout',
             ],
         ],
@@ -33,14 +33,14 @@ You can use Login widget to achieve this:
 ```php
 <?php
 
-use bajhoe\user\widgets\Login;
+use infinindotech\user\widgets\Login;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\ActiveForm;
 
 /**
  * @var yii\web\View              $this
- * @var bajhoe\user\models\User $user
- * @var bajhoe\user\Module      $module
+ * @var infinindotech\user\models\User $user
+ * @var infinindotech\user\Module      $module
  */
 
 $this->title = Yii::t('user', 'Sign up');
@@ -98,15 +98,15 @@ You can listen controller's events using `controllerMap` module's property:
 ```php
 'modules' => [
     'user' => [
-        'class' => 'bajhoe\user\Module',
+        'class' => 'infinindotech\user\Module',
         'controllerMap' => [
             'recovery' => [
-                'class' => \bajhoe\user\controllers\RecoveryController::class,
-                'on ' . \bajhoe\user\controllers\RecoveryController::EVENT_AFTER_REQUEST => function (\bajhoe\user\events\FormEvent $event) {
+                'class' => \infinindotech\user\controllers\RecoveryController::class,
+                'on ' . \infinindotech\user\controllers\RecoveryController::EVENT_AFTER_REQUEST => function (\infinindotech\user\events\FormEvent $event) {
                     \Yii::$app->controller->redirect(['/user/login']);
                     \Yii::$app->end();
                 },
-                'on ' . \bajhoe\user\controllers\RecoveryController::EVENT_AFTER_RESET => function (\bajhoe\user\events\ResetPasswordEvent $event) {
+                'on ' . \infinindotech\user\controllers\RecoveryController::EVENT_AFTER_RESET => function (\infinindotech\user\events\ResetPasswordEvent $event) {
                     if ($event->token->user ?? false) {
                         \Yii::$app->user->login($event->token->user);
                     }
@@ -115,12 +115,12 @@ You can listen controller's events using `controllerMap` module's property:
                 },
             ],
             'registration' => [
-                'class' => \bajhoe\user\controllers\RegistrationController::class,
-                'on ' . \bajhoe\user\controllers\RegistrationController::EVENT_AFTER_REGISTER => function (\bajhoe\user\events\FormEvent $event) {
+                'class' => \infinindotech\user\controllers\RegistrationController::class,
+                'on ' . \infinindotech\user\controllers\RegistrationController::EVENT_AFTER_REGISTER => function (\infinindotech\user\events\FormEvent $event) {
                     \Yii::$app->controller->redirect(['/user/login']);
                     \Yii::$app->end();
                 },
-                'on ' . \bajhoe\user\controllers\RegistrationController::EVENT_AFTER_RESEND => function (\bajhoe\user\events\FormEvent $event) {
+                'on ' . \infinindotech\user\controllers\RegistrationController::EVENT_AFTER_RESEND => function (\infinindotech\user\events\FormEvent $event) {
                     \Yii::$app->controller->redirect(['/user/login']);
                     \Yii::$app->end();
                 },

@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\commands;
+namespace infinindotech\user\commands;
 
-use bajhoe\user\models\User;
+use infinindotech\user\models\User;
 use Yii;
 use yii\console\Controller;
 use yii\helpers\Console;
@@ -19,7 +19,7 @@ use yii\helpers\Console;
 /**
  * Creates new user account.
  *
- * @property \bajhoe\user\Module $module
+ * @property \infinindotech\user\Module $module
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */

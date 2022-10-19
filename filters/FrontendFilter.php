@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\filters;
+namespace infinindotech\user\filters;
 
 use yii\base\ActionFilter;
 use yii\web\NotFoundHttpException;

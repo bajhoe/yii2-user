@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\controllers;
+namespace infinindotech\user\controllers;
 
-use bajhoe\user\Finder;
-use bajhoe\user\models\RegistrationForm;
-use bajhoe\user\models\ResendForm;
-use bajhoe\user\models\User;
-use bajhoe\user\traits\AjaxValidationTrait;
-use bajhoe\user\traits\EventTrait;
+use infinindotech\user\Finder;
+use infinindotech\user\models\RegistrationForm;
+use infinindotech\user\models\ResendForm;
+use infinindotech\user\models\User;
+use infinindotech\user\traits\AjaxValidationTrait;
+use infinindotech\user\traits\EventTrait;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -25,7 +25,7 @@ use yii\web\NotFoundHttpException;
  * RegistrationController is responsible for all registration process, which includes registration of a new account,
  * resending confirmation tokens, email confirmation and registration via social networks.
  *
- * @property \bajhoe\user\Module $module
+ * @property \infinindotech\user\Module $module
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */
@@ -36,49 +36,49 @@ class RegistrationController extends Controller
 
     /**
      * Event is triggered after creating RegistrationForm class.
-     * Triggered with \bajhoe\user\events\FormEvent.
+     * Triggered with \infinindotech\user\events\FormEvent.
      */
     const EVENT_BEFORE_REGISTER = 'beforeRegister';
 
     /**
      * Event is triggered after successful registration.
-     * Triggered with \bajhoe\user\events\FormEvent.
+     * Triggered with \infinindotech\user\events\FormEvent.
      */
     const EVENT_AFTER_REGISTER = 'afterRegister';
 
     /**
      * Event is triggered before connecting user to social account.
-     * Triggered with \bajhoe\user\events\UserEvent.
+     * Triggered with \infinindotech\user\events\UserEvent.
      */
     const EVENT_BEFORE_CONNECT = 'beforeConnect';
 
     /**
      * Event is triggered after connecting user to social account.
-     * Triggered with \bajhoe\user\events\UserEvent.
+     * Triggered with \infinindotech\user\events\UserEvent.
      */
     const EVENT_AFTER_CONNECT = 'afterConnect';
 
     /**
      * Event is triggered before confirming user.
-     * Triggered with \bajhoe\user\events\UserEvent.
+     * Triggered with \infinindotech\user\events\UserEvent.
      */
     const EVENT_BEFORE_CONFIRM = 'beforeConfirm';
 
     /**
      * Event is triggered before confirming user.
-     * Triggered with \bajhoe\user\events\UserEvent.
+     * Triggered with \infinindotech\user\events\UserEvent.
      */
     const EVENT_AFTER_CONFIRM = 'afterConfirm';
 
     /**
      * Event is triggered after creating ResendForm class.
-     * Triggered with \bajhoe\user\events\FormEvent.
+     * Triggered with \infinindotech\user\events\FormEvent.
      */
     const EVENT_BEFORE_RESEND = 'beforeResend';
 
     /**
      * Event is triggered after successful resending of confirmation email.
-     * Triggered with \bajhoe\user\events\FormEvent.
+     * Triggered with \infinindotech\user\events\FormEvent.
      */
     const EVENT_AFTER_RESEND = 'afterResend';
 

@@ -10,7 +10,7 @@
  */
 
 /**
- * @var bajhoe\user\models\User
+ * @var infinindotech\user\models\User
  */
 ?>
 <?= Yii::t('user', 'Hello') ?>,

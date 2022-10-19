@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\events;
+namespace infinindotech\user\events;
 
-use bajhoe\user\models\User;
-use bajhoe\user\models\Account;
+use infinindotech\user\models\User;
+use infinindotech\user\models\Account;
 use yii\base\Event;
 
 /**

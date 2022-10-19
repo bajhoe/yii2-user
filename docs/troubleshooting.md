@@ -12,6 +12,6 @@ Yii2-user identity class:
 ```php
 'user' => [
     'class' => 'app\components\User',
-    'identityClass' => 'bajhoe\user\models\User',
+    'identityClass' => 'infinindotech\user\models\User',
 ],
 ```

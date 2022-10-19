@@ -5,15 +5,15 @@ return [
     'basePath' => dirname(__DIR__),
     'language' => 'en-US',
     'aliases' => [
-        '@bajhoe/user' => dirname(dirname(dirname(__DIR__))),
+        '@infinindotech/user' => dirname(dirname(dirname(__DIR__))),
         '@tests' => dirname(dirname(__DIR__)),
         '@vendor' => VENDOR_DIR,
         '@bower' => VENDOR_DIR . '/bower-asset',
     ],
-    'bootstrap' => ['bajhoe\user\Bootstrap'],
+    'bootstrap' => ['infinindotech\user\Bootstrap'],
     'modules' => [
         'user' => [
-            'class' => 'bajhoe\user\Module',
+            'class' => 'infinindotech\user\Module',
             'admins' => ['user'],
         ],
     ],

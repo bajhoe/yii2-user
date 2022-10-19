@@ -13,7 +13,7 @@ use yii\bootstrap5\Nav;
 
 /**
  * @var \yii\web\View $this
- * @var \bajhoe\user\models\User $user
+ * @var \infinindotech\user\models\User $user
  * @var string $content
  */
 

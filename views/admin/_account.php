@@ -14,11 +14,11 @@ use yii\bootstrap5\Html;
 
 /**
  * @var yii\web\View $this
- * @var bajhoe\user\models\User $user
+ * @var infinindotech\user\models\User $user
  */
 ?>
 
-<?php $this->beginContent('@bajhoe/user/views/admin/update.php', ['user' => $user]) ?>
+<?php $this->beginContent('@infinindotech/user/views/admin/update.php', ['user' => $user]) ?>
 
 <?php $form = ActiveForm::begin([
     'layout' => 'floating',

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\traits;
+namespace infinindotech\user\traits;
 
 use yii\base\Model;
 use yii\web\Response;

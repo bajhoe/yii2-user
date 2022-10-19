@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\models;
+namespace infinindotech\user\models;
 
-use bajhoe\user\Finder;
+use infinindotech\user\Finder;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;

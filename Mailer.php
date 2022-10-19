@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user;
+namespace infinindotech\user;
 
-use bajhoe\user\models\Token;
-use bajhoe\user\models\User;
+use infinindotech\user\models\Token;
+use infinindotech\user\models\User;
 use Yii;
 use yii\base\Component;
 
@@ -24,7 +24,7 @@ use yii\base\Component;
 class Mailer extends Component
 {
     /** @var string */
-    public $viewPath = '@bajhoe/user/views/mail';
+    public $viewPath = '@infinindotech/user/views/mail';
 
     /** @var string|array Default: `Yii::$app->params['adminEmail']` OR `no-reply@example.com` */
     public $sender;
@@ -47,7 +47,7 @@ class Mailer extends Component
     /** @var string */
     protected $recoverySubject;
 
-    /** @var \bajhoe\user\Module */
+    /** @var \infinindotech\user\Module */
     protected $module;
 
     /**

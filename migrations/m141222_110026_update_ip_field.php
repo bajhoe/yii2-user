@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-use bajhoe\user\migrations\Migration;
+use infinindotech\user\migrations\Migration;
 use yii\db\Query;
 
 class m141222_110026_update_ip_field extends Migration

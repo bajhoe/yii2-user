@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-use bajhoe\user\widgets\Connect;
+use infinindotech\user\widgets\Connect;
 use yii\bootstrap5\Html;
 
 /**

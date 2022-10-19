@@ -10,7 +10,7 @@ configure your view application component as follows:
     'view' => [
         'theme' => [
             'pathMap' => [
-                '@bajhoe/user/views' => '@app/views/user'
+                '@infinindotech/user/views' => '@app/views/user'
             ],
         ],
     ],
@@ -18,7 +18,7 @@ configure your view application component as follows:
 ...
 ```
 
-In the above `pathMap` means that every view in @bajhoe/user/views will be first searched under `@app/views/user` and
+In the above `pathMap` means that every view in @infinindotech/user/views will be first searched under `@app/views/user` and
 if a view exists in the theme directory it will be used instead of the original view.
 
 ## Example
@@ -37,7 +37,7 @@ use yii\bootstrap5\ActiveForm;
 /**
  * @var yii\web\View              $this
  * @var yii\bootstrap5\ActiveForm    $form
- * @var bajhoe\user\models\User $user
+ * @var infinindotech\user\models\User $user
  */
 
 $this->title = Yii::t('user', 'Sign up');

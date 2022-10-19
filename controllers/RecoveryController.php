@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\controllers;
+namespace infinindotech\user\controllers;
 
-use bajhoe\user\Finder;
-use bajhoe\user\models\RecoveryForm;
-use bajhoe\user\models\Token;
-use bajhoe\user\traits\AjaxValidationTrait;
-use bajhoe\user\traits\EventTrait;
+use infinindotech\user\Finder;
+use infinindotech\user\models\RecoveryForm;
+use infinindotech\user\models\Token;
+use infinindotech\user\traits\AjaxValidationTrait;
+use infinindotech\user\traits\EventTrait;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -23,7 +23,7 @@ use yii\web\NotFoundHttpException;
 /**
  * RecoveryController manages password recovery process.
  *
- * @property \bajhoe\user\Module $module
+ * @property \infinindotech\user\Module $module
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */
@@ -34,37 +34,37 @@ class RecoveryController extends Controller
 
     /**
      * Event is triggered before requesting password reset.
-     * Triggered with \bajhoe\user\events\FormEvent.
+     * Triggered with \infinindotech\user\events\FormEvent.
      */
     const EVENT_BEFORE_REQUEST = 'beforeRequest';
 
     /**
      * Event is triggered after requesting password reset.
-     * Triggered with \bajhoe\user\events\FormEvent.
+     * Triggered with \infinindotech\user\events\FormEvent.
      */
     const EVENT_AFTER_REQUEST = 'afterRequest';
 
     /**
      * Event is triggered before validating recovery token.
-     * Triggered with \bajhoe\user\events\ResetPasswordEvent. May not have $form property set.
+     * Triggered with \infinindotech\user\events\ResetPasswordEvent. May not have $form property set.
      */
     const EVENT_BEFORE_TOKEN_VALIDATE = 'beforeTokenValidate';
 
     /**
      * Event is triggered after validating recovery token.
-     * Triggered with \bajhoe\user\events\ResetPasswordEvent. May not have $form property set.
+     * Triggered with \infinindotech\user\events\ResetPasswordEvent. May not have $form property set.
      */
     const EVENT_AFTER_TOKEN_VALIDATE = 'afterTokenValidate';
 
     /**
      * Event is triggered before resetting password.
-     * Triggered with \bajhoe\user\events\ResetPasswordEvent.
+     * Triggered with \infinindotech\user\events\ResetPasswordEvent.
      */
     const EVENT_BEFORE_RESET = 'beforeReset';
 
     /**
      * Event is triggered after resetting password.
-     * Triggered with \bajhoe\user\events\ResetPasswordEvent.
+     * Triggered with \infinindotech\user\events\ResetPasswordEvent.
      */
     const EVENT_AFTER_RESET = 'afterReset';
 

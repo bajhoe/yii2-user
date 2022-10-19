@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\filters;
+namespace infinindotech\user\filters;
 
 /**
  * Access rule class for simpler RBAC.

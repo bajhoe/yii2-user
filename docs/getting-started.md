@@ -24,7 +24,7 @@ Add following lines to your main configuration file:
 ```php
 'modules' => [
     'user' => [
-        'class' => 'bajhoe\user\Module',
+        'class' => 'infinindotech\user\Module',
     ],
 ],
 ```

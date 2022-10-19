@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\events;
+namespace infinindotech\user\events;
 
-use bajhoe\user\models\Account;
+use infinindotech\user\models\Account;
 use yii\authclient\ClientInterface;
 use yii\base\Event;
 

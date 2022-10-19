@@ -10,10 +10,10 @@
  */
 
 use yii\bootstrap5\Html;
-use bajhoe\user\widgets\UserMenu;
+use infinindotech\user\widgets\UserMenu;
 
 /**
- * @var bajhoe\user\models\User $user
+ * @var infinindotech\user\models\User $user
  */
 
 $user = Yii::$app->user->identity;

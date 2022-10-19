@@ -1,14 +1,14 @@
 <?php
 
-namespace bajhoe\user\traits;
+namespace infinindotech\user\traits;
 
-use bajhoe\user\Module;
+use infinindotech\user\Module;
 
 /**
  * Trait ModuleTrait
  *
  * @property-read Module $module
- * @package bajhoe\user\traits
+ * @package infinindotech\user\traits
  */
 trait ModuleTrait
 {

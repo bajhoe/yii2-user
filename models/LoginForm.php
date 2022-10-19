@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\models;
+namespace infinindotech\user\models;
 
-use bajhoe\user\Finder;
-use bajhoe\user\helpers\Password;
-use bajhoe\user\traits\ModuleTrait;
+use infinindotech\user\Finder;
+use infinindotech\user\helpers\Password;
+use infinindotech\user\traits\ModuleTrait;
 use yii\helpers\ArrayHelper;
 use yii\bootstrap5\Html;
 use Yii;
@@ -38,7 +38,7 @@ class LoginForm extends Model
     /** @var string Whether to remember the user */
     public $rememberMe = false;
 
-    /** @var \bajhoe\user\models\User */
+    /** @var \infinindotech\user\models\User */
     protected $user;
 
     /** @var Finder */
@@ -61,7 +61,7 @@ class LoginForm extends Model
      */
     public static function loginList()
     {
-        /** @var \bajhoe\user\Module $module */
+        /** @var \infinindotech\user\Module $module */
         $module = \Yii::$app->getModule('user');
 
         $userModel = $module->modelMap['User'];

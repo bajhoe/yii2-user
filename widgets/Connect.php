@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\widgets;
+namespace infinindotech\user\widgets;
 
 use Yii;
 use yii\authclient\ClientInterface;

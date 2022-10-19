@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\controllers;
+namespace infinindotech\user\controllers;
 
-use bajhoe\user\Finder;
-use bajhoe\user\models\Profile;
-use bajhoe\user\models\SettingsForm;
-use bajhoe\user\models\User;
-use bajhoe\user\Module;
-use bajhoe\user\traits\AjaxValidationTrait;
-use bajhoe\user\traits\EventTrait;
+use infinindotech\user\Finder;
+use infinindotech\user\models\Profile;
+use infinindotech\user\models\SettingsForm;
+use infinindotech\user\models\User;
+use infinindotech\user\Module;
+use infinindotech\user\traits\AjaxValidationTrait;
+use infinindotech\user\traits\EventTrait;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
@@ -27,7 +27,7 @@ use yii\web\NotFoundHttpException;
 /**
  * SettingsController manages updating user settings (e.g. profile, email and password).
  *
- * @property \bajhoe\user\Module $module
+ * @property \infinindotech\user\Module $module
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */
@@ -38,61 +38,61 @@ class SettingsController extends Controller
 
     /**
      * Event is triggered before updating user's profile.
-     * Triggered with \bajhoe\user\events\UserEvent.
+     * Triggered with \infinindotech\user\events\UserEvent.
      */
     const EVENT_BEFORE_PROFILE_UPDATE = 'beforeProfileUpdate';
 
     /**
      * Event is triggered after updating user's profile.
-     * Triggered with \bajhoe\user\events\UserEvent.
+     * Triggered with \infinindotech\user\events\UserEvent.
      */
     const EVENT_AFTER_PROFILE_UPDATE = 'afterProfileUpdate';
 
     /**
      * Event is triggered before updating user's account settings.
-     * Triggered with \bajhoe\user\events\FormEvent.
+     * Triggered with \infinindotech\user\events\FormEvent.
      */
     const EVENT_BEFORE_ACCOUNT_UPDATE = 'beforeAccountUpdate';
 
     /**
      * Event is triggered after updating user's account settings.
-     * Triggered with \bajhoe\user\events\FormEvent.
+     * Triggered with \infinindotech\user\events\FormEvent.
      */
     const EVENT_AFTER_ACCOUNT_UPDATE = 'afterAccountUpdate';
 
     /**
      * Event is triggered before changing users' email address.
-     * Triggered with \bajhoe\user\events\UserEvent.
+     * Triggered with \infinindotech\user\events\UserEvent.
      */
     const EVENT_BEFORE_CONFIRM = 'beforeConfirm';
 
     /**
      * Event is triggered after changing users' email address.
-     * Triggered with \bajhoe\user\events\UserEvent.
+     * Triggered with \infinindotech\user\events\UserEvent.
      */
     const EVENT_AFTER_CONFIRM = 'afterConfirm';
 
     /**
      * Event is triggered before disconnecting social account from user.
-     * Triggered with \bajhoe\user\events\ConnectEvent.
+     * Triggered with \infinindotech\user\events\ConnectEvent.
      */
     const EVENT_BEFORE_DISCONNECT = 'beforeDisconnect';
 
     /**
      * Event is triggered after disconnecting social account from user.
-     * Triggered with \bajhoe\user\events\ConnectEvent.
+     * Triggered with \infinindotech\user\events\ConnectEvent.
      */
     const EVENT_AFTER_DISCONNECT = 'afterDisconnect';
 
     /**
      * Event is triggered before deleting user's account.
-     * Triggered with \bajhoe\user\events\UserEvent.
+     * Triggered with \infinindotech\user\events\UserEvent.
      */
     const EVENT_BEFORE_DELETE = 'beforeDelete';
 
     /**
      * Event is triggered after deleting user's account.
-     * Triggered with \bajhoe\user\events\UserEvent.
+     * Triggered with \infinindotech\user\events\UserEvent.
      */
     const EVENT_AFTER_DELETE = 'afterDelete';
 

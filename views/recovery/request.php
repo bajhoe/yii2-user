@@ -15,7 +15,7 @@ use yii\bootstrap5\ActiveForm;
 /**
  * @var yii\web\View $this
  * @var yii\bootstrap5\ActiveForm $form
- * @var bajhoe\user\models\RecoveryForm $model
+ * @var infinindotech\user\models\RecoveryForm $model
  */
 
 $this->title = Yii::t('user', 'Recover your password');

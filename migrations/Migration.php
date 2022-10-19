@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\migrations;
+namespace infinindotech\user\migrations;
 
 use Yii;
 

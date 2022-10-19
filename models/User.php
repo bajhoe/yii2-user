@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\models;
+namespace infinindotech\user\models;
 
-use bajhoe\user\Finder;
-use bajhoe\user\helpers\Password;
-use bajhoe\user\Mailer;
-use bajhoe\user\Module;
-use bajhoe\user\traits\ModuleTrait;
+use infinindotech\user\Finder;
+use infinindotech\user\helpers\Password;
+use infinindotech\user\Mailer;
+use infinindotech\user\Module;
+use infinindotech\user\traits\ModuleTrait;
 use yii\base\NotSupportedException;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;

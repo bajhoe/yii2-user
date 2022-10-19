@@ -10,7 +10,7 @@
  */
 
 /**
- * @var bajhoe\user\models\Token $token
+ * @var infinindotech\user\models\Token $token
  */
 ?>
 <?= Yii::t('user', 'Hello') ?>,

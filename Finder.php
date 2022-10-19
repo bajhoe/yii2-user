@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user;
+namespace infinindotech\user;
 
-use bajhoe\user\models\query\AccountQuery;
-use bajhoe\user\models\Token;
+use infinindotech\user\models\query\AccountQuery;
+use infinindotech\user\models\Token;
 use yii\authclient\ClientInterface;
 use yii\base\BaseObject;
 use yii\db\ActiveQuery;

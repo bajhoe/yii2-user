@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\models;
+namespace infinindotech\user\models;
 
-use bajhoe\user\Finder;
-use bajhoe\user\Mailer;
+use infinindotech\user\Finder;
+use infinindotech\user\Mailer;
 use yii\base\Model;
 
 /**

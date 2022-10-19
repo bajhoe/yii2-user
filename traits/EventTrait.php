@@ -9,19 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\traits;
+namespace infinindotech\user\traits;
 
-use bajhoe\user\events\AuthEvent;
-use bajhoe\user\events\ConnectEvent;
-use bajhoe\user\events\FormEvent;
-use bajhoe\user\events\ProfileEvent;
-use bajhoe\user\events\ResetPasswordEvent;
-use bajhoe\user\events\UserEvent;
-use bajhoe\user\models\Account;
-use bajhoe\user\models\Profile;
-use bajhoe\user\models\RecoveryForm;
-use bajhoe\user\models\Token;
-use bajhoe\user\models\User;
+use infinindotech\user\events\AuthEvent;
+use infinindotech\user\events\ConnectEvent;
+use infinindotech\user\events\FormEvent;
+use infinindotech\user\events\ProfileEvent;
+use infinindotech\user\events\ResetPasswordEvent;
+use infinindotech\user\events\UserEvent;
+use infinindotech\user\models\Account;
+use infinindotech\user\models\Profile;
+use infinindotech\user\models\RecoveryForm;
+use infinindotech\user\models\Token;
+use infinindotech\user\models\User;
 use yii\authclient\ClientInterface;
 use yii\base\Model;
 

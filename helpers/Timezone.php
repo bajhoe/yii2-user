@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\helpers;
+namespace infinindotech\user\helpers;
 
 /**
  * Timezone helper.

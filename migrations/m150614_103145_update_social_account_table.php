@@ -1,7 +1,7 @@
 <?php
 
 use yii\db\Query;
-use bajhoe\user\migrations\Migration;
+use infinindotech\user\migrations\Migration;
 
 class m150614_103145_update_social_account_table extends Migration
 {

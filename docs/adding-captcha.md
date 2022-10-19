@@ -25,7 +25,7 @@ public property named **captcha** and validation rules.
 
     namespace app\models;
 
-    class RegistrationForm extends \bajhoe\user\models\RegistrationForm
+    class RegistrationForm extends \infinindotech\user\models\RegistrationForm
     {
         /**
          * @var string

@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace bajhoe\user\models;
+namespace infinindotech\user\models;
 
-use bajhoe\user\traits\ModuleTrait;
+use infinindotech\user\traits\ModuleTrait;
 use yii\db\ActiveRecord;
 
 /**
@@ -33,7 +33,7 @@ use yii\db\ActiveRecord;
 class Profile extends ActiveRecord
 {
     use ModuleTrait;
-    /** @var \bajhoe\user\Module */
+    /** @var \infinindotech\user\Module */
     protected $module;
 
     /** @inheritdoc */

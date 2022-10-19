@@ -37,11 +37,11 @@
     },
     "autoload": {
         "psr-4": {
-            "bajhoe\\user\\": ""
+            "infinindotech\\user\\": ""
         }
     },
     "extra": {
-        "bootstrap": "bajhoe\\user\\Bootstrap",
+        "bootstrap": "infinindotech\\user\\Bootstrap",
         "branch-alias": {
             "dev-master": "0.9.x-dev",
             "dev-develop": "1.0.x-dev"

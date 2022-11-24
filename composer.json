@@ -20,6 +20,12 @@
             "email": "bajhoe@gmail.com",
             "homepage": "https://bajhoe.web.id",
             "role": "forker and maintainer"
+        },
+        {
+            "name": "Aditiya Sidabutar",
+            "email": "sidabutaraditiya@gmail.com",
+            "homepage": "https://sidabutar.web.id",
+            "role": "maintainer"
         }
     ],
     "minimum-stability": "dev",
@@ -27,7 +33,8 @@
         "php": ">=5.4.0",
         "yiisoft/yii2": "~2.0.14",
         "yiisoft/yii2-swiftmailer": "^2.0.0",
-        "yiisoft/yii2-authclient": "^2.1.0"
+        "yiisoft/yii2-authclient": "^2.1.0",
+        "yiisoft/yii2-bootstrap5": "^2.0"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "^2.0.0",
@@ -36,11 +43,11 @@
     },
     "autoload": {
         "psr-4": {
-            "dektrium\\user\\": ""
+            "infinindotech\\user\\": ""
         }
     },
     "extra": {
-        "bootstrap": "dektrium\\user\\Bootstrap",
+        "bootstrap": "infinindotech\\user\\Bootstrap",
         "branch-alias": {
             "dev-master": "0.9.x-dev",
             "dev-develop": "1.0.x-dev"

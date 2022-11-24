@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-use dektrium\user\widgets\Connect;
-use dektrium\user\models\LoginForm;
-use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use infinindotech\user\widgets\Connect;
+use infinindotech\user\models\LoginForm;
+use yii\bootstrap5\Html;
+use yii\bootstrap5\ActiveForm;
 
 /**
  * @var yii\web\View $this
- * @var dektrium\user\models\LoginForm $model
- * @var dektrium\user\Module $module
+ * @var infinindotech\user\models\LoginForm $model
+ * @var infinindotech\user\Module $module
  */
 
 $this->title = Yii::t('user', 'Sign in');
@@ -34,6 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="panel-body">
                 <?php $form = ActiveForm::begin([
+                    'layout' => 'floating',
                     'id' => 'login-form',
                     'enableAjaxValidation' => true,
                     'enableClientValidation' => false,
@@ -71,13 +72,6 @@ $this->params['breadcrumbs'][] = $this->title;
                         ->passwordInput()
                         ->label(
                             Yii::t('user', 'Password')
-                            . ($module->enablePasswordRecovery ?
-                                ' (' . Html::a(
-                                    Yii::t('user', 'Forgot password?'),
-                                    ['/user/recovery/request'],
-                                    ['tabindex' => '5']
-                                )
-                                . ')' : '')
                         ) ?>
                 <?php endif ?>
 
@@ -85,12 +79,18 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?= Html::submitButton(
                     Yii::t('user', 'Sign in'),
-                    ['class' => 'btn btn-primary btn-block', 'tabindex' => '4']
+                    ['class' => 'btn btn-primary btn-block mt-3', 'tabindex' => '4']
                 ) ?>
 
                 <?php ActiveForm::end(); ?>
             </div>
         </div>
+
+        <?php if($module->enablePasswordRecovery) :?>
+            <p class="text-center">
+                <?= Html::a(Yii::t('user', 'Forgot password?'), ['/user/recovery/request']) ?>
+            </p>
+        <?php endif ?>
         <?php if ($module->enableConfirmation): ?>
             <p class="text-center">
                 <?= Html::a(Yii::t('user', 'Didn\'t receive confirmation message?'), ['/user/registration/resend']) ?>

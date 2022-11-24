@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace infinindotech\user\models;
 
-use dektrium\user\Finder;
-use dektrium\user\helpers\Password;
-use dektrium\user\traits\ModuleTrait;
+use infinindotech\user\Finder;
+use infinindotech\user\helpers\Password;
+use infinindotech\user\traits\ModuleTrait;
 use yii\helpers\ArrayHelper;
-use yii\helpers\Html;
+use yii\bootstrap5\Html;
 use Yii;
 use yii\base\Model;
 
@@ -38,7 +38,7 @@ class LoginForm extends Model
     /** @var string Whether to remember the user */
     public $rememberMe = false;
 
-    /** @var \dektrium\user\models\User */
+    /** @var \infinindotech\user\models\User */
     protected $user;
 
     /** @var Finder */
@@ -61,7 +61,7 @@ class LoginForm extends Model
      */
     public static function loginList()
     {
-        /** @var \dektrium\user\Module $module */
+        /** @var \infinindotech\user\Module $module */
         $module = \Yii::$app->getModule('user');
 
         $userModel = $module->modelMap['User'];

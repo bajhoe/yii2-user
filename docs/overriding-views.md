@@ -10,7 +10,7 @@ configure your view application component as follows:
     'view' => [
         'theme' => [
             'pathMap' => [
-                '@dektrium/user/views' => '@app/views/user'
+                '@infinindotech/user/views' => '@app/views/user'
             ],
         ],
     ],
@@ -18,7 +18,7 @@ configure your view application component as follows:
 ...
 ```
 
-In the above `pathMap` means that every view in @dektrium/user/views will be first searched under `@app/views/user` and
+In the above `pathMap` means that every view in @infinindotech/user/views will be first searched under `@app/views/user` and
 if a view exists in the theme directory it will be used instead of the original view.
 
 ## Example
@@ -31,13 +31,13 @@ and paste in the following code:
 
 ```php
 <?php
-use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use yii\bootstrap5\Html;
+use yii\bootstrap5\ActiveForm;
 
 /**
  * @var yii\web\View              $this
- * @var yii\widgets\ActiveForm    $form
- * @var dektrium\user\models\User $user
+ * @var yii\bootstrap5\ActiveForm    $form
+ * @var infinindotech\user\models\User $user
  */
 
 $this->title = Yii::t('user', 'Sign up');
@@ -54,6 +54,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="panel-body">
                 <?php $form = ActiveForm::begin([
+                    'layout' => 'floating',
                     'id' => 'registration-form',
                 ]); ?>
 
@@ -63,7 +64,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?= $form->field($model, 'password')->passwordInput() ?>
 
-                <?= Html::submitButton(Yii::t('user', 'Sign up'), ['class' => 'btn btn-success btn-block']) ?>
+                <?= Html::submitButton(Yii::t('user', 'Sign up'), ['class' => 'btn btn-success btn-block mt-3']) ?>
 
                 <?php ActiveForm::end(); ?>
             </div>

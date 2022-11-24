@@ -11,11 +11,11 @@
 
 /**
  * @var yii\web\View $this
- * @var dektrium\user\models\User $user
+ * @var infinindotech\user\models\User $user
  */
 ?>
 
-<?php $this->beginContent('@dektrium/user/views/admin/update.php', ['user' => $user]) ?>
+<?php $this->beginContent('@infinindotech/user/views/admin/update.php', ['user' => $user]) ?>
 
 <table class="table">
     <tr>

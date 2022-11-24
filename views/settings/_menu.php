@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-use yii\helpers\Html;
-use dektrium\user\widgets\UserMenu;
+use yii\bootstrap5\Html;
+use infinindotech\user\widgets\UserMenu;
 
 /**
- * @var dektrium\user\models\User $user
+ * @var infinindotech\user\models\User $user
  */
 
 $user = Yii::$app->user->identity;

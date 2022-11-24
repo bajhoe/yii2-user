@@ -11,11 +11,11 @@
 
 use yii\bootstrap5\ActiveForm;
 use yii\bootstrap5\Nav;
-use yii\helpers\Html;
+use yii\bootstrap5\Html;
 
 /**
  * @var yii\web\View $this
- * @var dektrium\user\models\User $user
+ * @var infinindotech\user\models\User $user
  */
 
 $this->title = Yii::t('user', 'Create a user account');
@@ -58,21 +58,21 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?= Yii::t('user', 'A password will be generated automatically if not provided') ?>.
                 </div>
                 <?php $form = ActiveForm::begin([
-                    'layout' => 'horizontal',
+                    'layout' => 'floating',
                     'enableAjaxValidation' => true,
                     'enableClientValidation' => false,
-                    'fieldConfig' => [
-                        'horizontalCssClasses' => [
-                            'wrapper' => 'col-sm-9',
-                        ],
-                    ],
+                    // 'fieldConfig' => [
+                    //     'horizontalCssClasses' => [
+                    //         'wrapper' => 'col-sm-9',
+                    //     ],
+                    // ],
                 ]); ?>
 
                 <?= $this->render('_user', ['form' => $form, 'user' => $user]) ?>
 
                 <div class="form-group">
                     <div class="col-lg-offset-3 col-lg-9">
-                        <?= Html::submitButton(Yii::t('user', 'Save'), ['class' => 'btn btn-block btn-success']) ?>
+                        <?= Html::submitButton(Yii::t('user', 'Save'), ['class' => 'btn btn-block btn-success mt-3']) ?>
                     </div>
                 </div>
 

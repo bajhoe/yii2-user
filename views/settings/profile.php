@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-use yii\helpers\Html;
-use dektrium\user\helpers\Timezone;
-use yii\widgets\ActiveForm;
+use yii\bootstrap5\Html;
+use infinindotech\user\helpers\Timezone;
+use yii\bootstrap5\ActiveForm;
 use yii\helpers\ArrayHelper;
 
 /**
  * @var yii\web\View $this
- * @var yii\widgets\ActiveForm $form
- * @var dektrium\user\models\Profile $model
+ * @var yii\bootstrap5\ActiveForm $form
+ * @var infinindotech\user\models\Profile $model
  */
 
 $this->title = Yii::t('user', 'Profile settings');
@@ -37,10 +37,11 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="panel-body">
                 <?php $form = ActiveForm::begin([
+                    'layout' => 'floating',
                     'id' => 'profile-form',
                     'options' => ['class' => 'form-horizontal'],
                     'fieldConfig' => [
-                        'template' => "{label}\n<div class=\"col-lg-9\">{input}</div>\n<div class=\"col-sm-offset-3 col-lg-9\">{error}\n{hint}</div>",
+                        // 'template' => "{label}\n<div class=\"col-lg-9\">{input}</div>\n<div class=\"col-sm-offset-3 col-lg-9\">{error}\n{hint}</div>",
                         'labelOptions' => ['class' => 'col-lg-3 control-label'],
                     ],
                     'enableAjaxValidation' => true,
@@ -74,7 +75,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <div class="form-group">
                     <div class="col-lg-offset-3 col-lg-9">
-                        <?= Html::submitButton(Yii::t('user', 'Save'), ['class' => 'btn btn-block btn-success']) ?>
+                        <?= Html::submitButton(Yii::t('user', 'Save'), ['class' => 'btn btn-block btn-success mt-3']) ?>
                         <br>
                     </div>
                 </div>

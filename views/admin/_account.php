@@ -10,18 +10,18 @@
  */
 
 use yii\bootstrap5\ActiveForm;
-use yii\helpers\Html;
+use yii\bootstrap5\Html;
 
 /**
  * @var yii\web\View $this
- * @var dektrium\user\models\User $user
+ * @var infinindotech\user\models\User $user
  */
 ?>
 
-<?php $this->beginContent('@dektrium/user/views/admin/update.php', ['user' => $user]) ?>
+<?php $this->beginContent('@infinindotech/user/views/admin/update.php', ['user' => $user]) ?>
 
 <?php $form = ActiveForm::begin([
-    'layout' => 'horizontal',
+    'layout' => 'floating',
     'enableAjaxValidation' => true,
     'enableClientValidation' => false,
     'fieldConfig' => [
@@ -35,7 +35,7 @@ use yii\helpers\Html;
 
 <div class="form-group">
     <div class="col-lg-offset-3 col-lg-9">
-        <?= Html::submitButton(Yii::t('user', 'Update'), ['class' => 'btn btn-block btn-success']) ?>
+        <?= Html::submitButton(Yii::t('user', 'Update'), ['class' => 'btn btn-block btn-success mt-3']) ?>
     </div>
 </div>
 

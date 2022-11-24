@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\events;
+namespace infinindotech\user\events;
 
-use dektrium\user\models\User;
-use dektrium\user\models\Account;
+use infinindotech\user\models\User;
+use infinindotech\user\models\Account;
 use yii\base\Event;
 
 /**

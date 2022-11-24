@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\widgets;
+namespace infinindotech\user\widgets;
 
 use Yii;
 use yii\authclient\ClientInterface;
 use yii\authclient\widgets\AuthChoice;
 use yii\authclient\widgets\AuthChoiceAsset;
-use yii\helpers\Html;
+use yii\bootstrap5\Html;
 use yii\helpers\Url;
 
 /**

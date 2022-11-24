@@ -10,7 +10,7 @@
  */
 
 use yii\grid\GridView;
-use yii\helpers\Html;
+use yii\bootstrap5\Html;
 use yii\helpers\Url;
 use yii\web\View;
 use yii\widgets\Pjax;
@@ -19,7 +19,7 @@ use yii\widgets\Pjax;
 /**
  * @var \yii\web\View $this
  * @var \yii\data\ActiveDataProvider $dataProvider
- * @var \dektrium\user\models\UserSearch $searchModel
+ * @var \infinindotech\user\models\UserSearch $searchModel
  */
 
 $this->title = Yii::t('user', 'Manage users');

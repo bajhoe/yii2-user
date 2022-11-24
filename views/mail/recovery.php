@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-use yii\helpers\Html;
+use yii\bootstrap5\Html;
 
 /**
- * @var dektrium\user\models\User $user
- * @var dektrium\user\models\Token $token
+ * @var infinindotech\user\models\User $user
+ * @var infinindotech\user\models\Token $token
  */
 ?>
 <p style="font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.6; font-weight: normal; margin: 0 0 10px; padding: 0;">

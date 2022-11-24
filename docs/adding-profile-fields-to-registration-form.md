@@ -9,9 +9,9 @@ Let's start with overriding the registration form model:
 ```php
 namespace app\models;
 
-use dektrium\user\models\Profile;
-use dektrium\user\models\RegistrationForm as BaseRegistrationForm;
-use dektrium\user\models\User;
+use infinindotech\user\models\Profile;
+use infinindotech\user\models\RegistrationForm as BaseRegistrationForm;
+use infinindotech\user\models\User;
 
 class RegistrationForm extends BaseRegistrationForm
 {
@@ -69,13 +69,13 @@ Last thing you need to do is overriding the registration form view:
 
 ```php
 <?php
-use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use yii\bootstrap5\Html;
+use yii\bootstrap5\ActiveForm;
 
 /**
  * @var yii\web\View              $this
- * @var yii\widgets\ActiveForm    $form
- * @var dektrium\user\models\User $user
+ * @var yii\bootstrap5\ActiveForm    $form
+ * @var infinindotech\user\models\User $user
  */
 
 $this->title = Yii::t('user', 'Sign up');
@@ -89,6 +89,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="panel-body">
                 <?php $form = ActiveForm::begin([
+                    'layout' => 'floating',
                     'id' => 'registration-form',
                 ]); ?>
                 
@@ -100,7 +101,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?= $form->field($model, 'password')->passwordInput() ?>
 
-                <?= Html::submitButton(Yii::t('user', 'Sign up'), ['class' => 'btn btn-success btn-block']) ?>
+                <?= Html::submitButton(Yii::t('user', 'Sign up'), ['class' => 'btn btn-success btn-block mt-3']) ?>
 
                 <?php ActiveForm::end(); ?>
             </div>

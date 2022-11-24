@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models\query;
+namespace infinindotech\user\models\query;
 
-use dektrium\user\models\Account;
+use infinindotech\user\models\Account;
 use yii\authclient\ClientInterface;
 use yii\db\ActiveQuery;
 

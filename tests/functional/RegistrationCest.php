@@ -1,13 +1,13 @@
 <?php
 
 
-use dektrium\user\models\Token;
-use dektrium\user\models\User;
-use dektrium\user\Module;
+use infinindotech\user\models\Token;
+use infinindotech\user\models\User;
+use infinindotech\user\Module;
 use tests\_fixtures\UserFixture;
 use tests\_pages\LoginPage;
 use tests\_pages\RegistrationPage;
-use yii\helpers\Html;
+use yii\bootstrap5\Html;
 
 class RegistrationCest
 {

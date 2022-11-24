@@ -12,11 +12,11 @@ message on a blank page:
 
 ```php
 'user' => [
-    'class' => \dektrium\user\Module::className(),
+    'class' => \infinindotech\user\Module::className(),
     'controllerMap' => [
         'registration' => [
-            'class' => \dektrium\user\controllers\RegistrationController::className(),
-            'on ' . \dektrium\user\controllers\RegistrationController::EVENT_AFTER_REGISTER => function ($e) {
+            'class' => \infinindotech\user\controllers\RegistrationController::className(),
+            'on ' . \infinindotech\user\controllers\RegistrationController::EVENT_AFTER_REGISTER => function ($e) {
                 Yii::$app->response->redirect(array('/user/security/login'))->send();
                 Yii::$app->end();
             }
@@ -31,8 +31,8 @@ You can also assign events on class-level.
 
 ```php
 \yii\base\Event::on(
-    \dektrium\user\controllers\RegistrationController::className(),
-    \dektrium\user\controllers\RegistrationController::EVENT_AFTER_CONFIRM,
+    \infinindotech\user\controllers\RegistrationController::className(),
+    \infinindotech\user\controllers\RegistrationController::EVENT_AFTER_CONFIRM,
     function () {        
         Yii::info('Assigning default roles to user...');
         // implement role assignment(s)

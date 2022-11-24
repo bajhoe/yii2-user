@@ -8,10 +8,10 @@ use tests\_fixtures\TokenFixture;
 use tests\_fixtures\UserFixture;
 use tests\_pages\RecoveryPage;
 use tests\_pages\LoginPage;
-use yii\helpers\Html;
+use yii\bootstrap5\Html;
 use yii\helpers\Url;
-use dektrium\user\models\User;
-use dektrium\user\models\Token;
+use infinindotech\user\models\User;
+use infinindotech\user\models\Token;
 
 $I = new FunctionalTester($scenario);
 $I->wantTo('ensure that password recovery works');

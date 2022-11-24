@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use yii\bootstrap5\Html;
+use yii\bootstrap5\ActiveForm;
 
 /**
  * @var yii\web\View $this
- * @var dektrium\user\models\ResendForm $model
+ * @var infinindotech\user\models\ResendForm $model
  */
 
 $this->title = Yii::t('user', 'Request new confirmation message');
@@ -28,6 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="panel-body">
                 <?php $form = ActiveForm::begin([
+                    'layout' => 'floating',
                     'id' => 'resend-form',
                     'enableAjaxValidation' => true,
                     'enableClientValidation' => false,
@@ -35,7 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?= $form->field($model, 'email')->textInput(['autofocus' => true]) ?>
 
-                <?= Html::submitButton(Yii::t('user', 'Continue'), ['class' => 'btn btn-primary btn-block']) ?><br>
+                <?= Html::submitButton(Yii::t('user', 'Continue'), ['class' => 'btn btn-primary btn-block mt-3']) ?><br>
 
                 <?php ActiveForm::end(); ?>
             </div>

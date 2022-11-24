@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\traits;
+namespace infinindotech\user\traits;
 
 use yii\base\Model;
 use yii\web\Response;
-use yii\widgets\ActiveForm;
+use yii\bootstrap5\ActiveForm;
 
 /**
  * @author Dmitry Erofeev <dmeroff@gmail.com>

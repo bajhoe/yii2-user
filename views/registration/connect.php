@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use yii\bootstrap5\Html;
+use yii\bootstrap5\ActiveForm;
 
 /**
  * @var yii\web\View $this
- * @var yii\widgets\ActiveForm $form
- * @var dektrium\user\models\User $model
- * @var dektrium\user\models\Account $account
+ * @var yii\bootstrap5\ActiveForm $form
+ * @var infinindotech\user\models\User $model
+ * @var infinindotech\user\models\Account $account
  */
 
 $this->title = Yii::t('user', 'Sign in');
@@ -38,6 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     </p>
                 </div>
                 <?php $form = ActiveForm::begin([
+                    'layout' => 'floating',
                     'id' => 'connect-account-form',
                 ]); ?>
 
@@ -45,7 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?= $form->field($model, 'username') ?>
 
-                <?= Html::submitButton(Yii::t('user', 'Continue'), ['class' => 'btn btn-success btn-block']) ?>
+                <?= Html::submitButton(Yii::t('user', 'Continue'), ['class' => 'btn btn-success btn-block mt-3']) ?>
 
                 <?php ActiveForm::end(); ?>
             </div>

@@ -9,9 +9,11 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\widgets;
+namespace infinindotech\user\widgets;
 
-use yii\widgets\Menu;
+// use yii\widgets\Menu;
+// use yii\bootstrap5\Menu;
+use yii\bootstrap5\Nav;
 use Yii;
 use yii\base\Widget;
 
@@ -21,7 +23,7 @@ use yii\base\Widget;
 class UserMenu extends Widget
 {
     
-    /** @array \dektrium\user\models\RegistrationForm */
+    /** @array \infinindotech\user\models\RegistrationForm */
     public $items;
     
     public function init()
@@ -46,9 +48,9 @@ class UserMenu extends Widget
      */
     public function run()
     {
-        return Menu::widget([
+        return Nav::widget([
             'options' => [
-                'class' => 'nav nav-pills nav-stacked',
+                'class' => 'nav-pills nav-stacked',
             ],
             'items' => $this->items,
         ]);

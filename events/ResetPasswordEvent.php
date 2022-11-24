@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\events;
+namespace infinindotech\user\events;
 
-use dektrium\user\models\RecoveryForm;
-use dektrium\user\models\Token;
+use infinindotech\user\models\RecoveryForm;
+use infinindotech\user\models\Token;
 use yii\base\Event;
 
 /**

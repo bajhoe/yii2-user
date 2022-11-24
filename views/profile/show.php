@@ -9,11 +9,11 @@
  * file that was distributed with this source code.
  */
 
-use yii\helpers\Html;
+use yii\bootstrap5\Html;
 
 /**
  * @var \yii\web\View $this
- * @var \dektrium\user\models\Profile $profile
+ * @var \infinindotech\user\models\Profile $profile
  */
 
 $this->title = empty($profile->name) ? Html::encode($profile->user->username) : Html::encode($profile->name);
@@ -26,6 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?= Html::img($profile->getAvatarUrl(230), [
                     'class' => 'img-rounded img-responsive',
                     'alt' => $profile->user->username,
+                    'width'=> '100%'
                 ]) ?>
             </div>
             <div class="col-sm-6 col-md-8">

@@ -10,13 +10,13 @@
  */
 
 use yii\helpers\Url;
-use yii\widgets\ActiveForm;
-use yii\helpers\Html;
+use yii\bootstrap5\ActiveForm;
+use yii\bootstrap5\Html;
 
 /**
  * @var yii\web\View                   $this
- * @var yii\widgets\ActiveForm         $form
- * @var dektrium\user\models\LoginForm $model
+ * @var yii\bootstrap5\ActiveForm         $form
+ * @var infinindotech\user\models\LoginForm $model
  * @var string                         $action
  */
 
@@ -25,6 +25,7 @@ use yii\helpers\Html;
 <?php if (Yii::$app->user->isGuest): ?>
     <?php $form = ActiveForm::begin([
         'id'                     => 'login-widget-form',
+        'layout'                 => 'floating',
         'action'                 => Url::to(['/user/security/login']),
         'enableAjaxValidation'   => true,
         'enableClientValidation' => false,
@@ -39,7 +40,7 @@ use yii\helpers\Html;
 
     <?= $form->field($model, 'rememberMe')->checkbox() ?>
 
-    <?= Html::submitButton(Yii::t('user', 'Sign in'), ['class' => 'btn btn-primary btn-block']) ?>
+    <?= Html::submitButton(Yii::t('user', 'Sign in'), ['class' => 'btn btn-primary btn-block mt-3']) ?>
 
     <?php ActiveForm::end(); ?>
 <?php else: ?>

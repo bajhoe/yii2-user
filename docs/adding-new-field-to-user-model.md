@@ -32,7 +32,7 @@ And now you can apply that migration by running `php yii migrate`.
 Override `User` model as described in [guide](overriding-models.md) and add following lines to the overridden model:
 
 ```php
-class User extends \dektrium\user\models\User
+class User extends \infinindotech\user\models\User
 {
     public function scenarios()
     {
@@ -58,15 +58,15 @@ class User extends \dektrium\user\models\User
 
 ## Adding field to the admin form
 
-You should override view file `@dektrium/user/views/admin/_user.php` as described in [special guide](overriding-views.md)
+You should override view file `@infinindotech/user/views/admin/_user.php` as described in [special guide](overriding-views.md)
 with the following content:
 
 ```php
 <?php
 
 /**
- * @var yii\widgets\ActiveForm    $form
- * @var dektrium\user\models\User $user
+ * @var yii\bootstrap5\ActiveForm    $form
+ * @var infinindotech\user\models\User $user
  */
 
 ?>
@@ -84,7 +84,7 @@ overriding registration form. Since all the fields of registration form are pass
 a field and appropriate validation rules:
 
 ```php
-class RegistrationForm extends \dektrium\user\models\RegistrationForm
+class RegistrationForm extends \infinindotech\user\models\RegistrationForm
 {
     /**
      * @var string
@@ -107,13 +107,13 @@ And the last thing you need to do is overriding registration form view file:
 
 ```php
 <?php
-use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+use yii\bootstrap5\Html;
+use yii\bootstrap5\ActiveForm;
 
 /**
  * @var yii\web\View              $this
- * @var yii\widgets\ActiveForm    $form
- * @var dektrium\user\models\User $user
+ * @var yii\bootstrap5\ActiveForm    $form
+ * @var infinindotech\user\models\User $user
  */
 
 $this->title = Yii::t('user', 'Sign up');
@@ -127,6 +127,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="panel-body">
                 <?php $form = ActiveForm::begin([
+                    'layout' => 'floating',
                     'id' => 'registration-form',
                 ]); ?>
                 
@@ -138,7 +139,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?= $form->field($model, 'password')->passwordInput() ?>
 
-                <?= Html::submitButton(Yii::t('user', 'Sign up'), ['class' => 'btn btn-success btn-block']) ?>
+                <?= Html::submitButton(Yii::t('user', 'Sign up'), ['class' => 'btn btn-success btn-block mt-3']) ?>
 
                 <?php ActiveForm::end(); ?>
             </div>

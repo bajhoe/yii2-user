@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace infinindotech\user\models;
 
-use dektrium\user\Finder;
-use dektrium\user\Mailer;
+use infinindotech\user\Finder;
+use infinindotech\user\Mailer;
 use yii\base\Model;
 
 /**

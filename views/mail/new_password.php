@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-use yii\helpers\Html;
+use yii\bootstrap5\Html;
 
 /**
- * @var dektrium\user\Module          $module
- * @var dektrium\user\models\User     $user
- * @var dektrium\user\models\Password $password
+ * @var infinindotech\user\Module          $module
+ * @var infinindotech\user\models\User     $user
+ * @var infinindotech\user\models\Password $password
  */
 
 ?>

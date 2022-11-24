@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-use dektrium\user\widgets\Connect;
-use yii\helpers\Html;
+use infinindotech\user\widgets\Connect;
+use yii\bootstrap5\Html;
 
 /**
  * @var $this yii\web\View
- * @var $form yii\widgets\ActiveForm
+ * @var $form yii\bootstrap5\ActiveForm
  */
 
 $this->title = Yii::t('user', 'Networks');

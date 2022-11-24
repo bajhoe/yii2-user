@@ -25,7 +25,7 @@ public property named **captcha** and validation rules.
 
     namespace app\models;
 
-    class RegistrationForm extends \dektrium\user\models\RegistrationForm
+    class RegistrationForm extends \infinindotech\user\models\RegistrationForm
     {
         /**
          * @var string
@@ -55,13 +55,13 @@ form, just copy and paste following code into newly created view file.
 
     <?php
 
-    use yii\helpers\Html;
-    use yii\widgets\ActiveForm;
+    use yii\bootstrap5\Html;
+    use yii\bootstrap5\ActiveForm;
     use yii\captcha\Captcha;
 
     /**
      * @var yii\web\View $this
-     * @var yii\widgets\ActiveForm $form
+     * @var yii\bootstrap5\ActiveForm $form
      * @var app\models\RegistrationForm $model
      */
     $this->title = Yii::t('user', 'Sign up');
@@ -75,7 +75,9 @@ form, just copy and paste following code into newly created view file.
                 </div>
                 <div class="panel-body">
                     <?php $form = ActiveForm::begin([
+                        'layout' => 'floating',
                         'id' => 'registration-form',
+                        'layout' => 'floating',
                     ]); ?>
 
                     <?= $form->field($model, 'username') ?>
@@ -88,7 +90,7 @@ form, just copy and paste following code into newly created view file.
                         'captchaAction' => ['/site/captcha']
                     ]) ?>
 
-                    <?= Html::submitButton(Yii::t('user', 'Sign up'), ['class' => 'btn btn-success btn-block']) ?>
+                    <?= Html::submitButton(Yii::t('user', 'Sign up'), ['class' => 'btn btn-success btn-block mt-3']) ?>
 
                     <?php ActiveForm::end(); ?>
                 </div>

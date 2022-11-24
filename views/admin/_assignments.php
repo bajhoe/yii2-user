@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-use dektrium\rbac\widgets\Assignments;
+use infinindotech\rbac\widgets\Assignments;
 
 /**
  * @var yii\web\View $this
- * @var dektrium\user\models\User $user
+ * @var infinindotech\user\models\User $user
  */
 ?>
 
-<?php $this->beginContent('@dektrium/user/views/admin/update.php', ['user' => $user]) ?>
+<?php $this->beginContent('@infinindotech/user/views/admin/update.php', ['user' => $user]) ?>
 
 <?= yii\bootstrap5\Alert::widget([
     'options' => [

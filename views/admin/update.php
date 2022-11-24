@@ -13,7 +13,7 @@ use yii\bootstrap5\Nav;
 
 /**
  * @var \yii\web\View $this
- * @var \dektrium\user\models\User $user
+ * @var \infinindotech\user\models\User $user
  * @var string $content
  */
 
@@ -47,7 +47,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         [
                             'label' => Yii::t('user', 'Assignments'),
                             'url' => ['/user/admin/assignments', 'id' => $user->id],
-                            'visible' => isset(Yii::$app->extensions['dektrium/yii2-rbac']),
+                            'visible' => isset(Yii::$app->extensions['bajhoe/yii2-rbac']),
                         ],
                         '<hr>',
                         [
